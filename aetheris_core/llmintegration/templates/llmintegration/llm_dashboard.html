@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">📊 Aetheris Threat Intelligence Dashboard</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h5>📦 Label Count by Data Source</h5>
+      <canvas id="sourceChart"></canvas>
+    </div>
+    <div class="col-md-6">
+      <h5>🧠 LLM vs ML Classification Volume</h5>
+      <canvas id="classificationChart"></canvas>
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <div class="row">
+    <div class="col-md-6">
+      <h5>🔥 Top Threat Impacts</h5>
+      <canvas id="impactChart"></canvas>
+    </div>
+    <div class="col-md-6">
+      <h5>💻 Top Operating Systems</h5>
+      <canvas id="osChart"></canvas>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <h5>🖥️ Platform Usage Distribution</h5>
+      <canvas id="platformChart"></canvas>
+    </div>
+    <div class="col-md-6">
+      <h5>🧩 Most Common Software</h5>
+      <canvas id="softwareChart"></canvas>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <h5>🏢 Most Affected Departments</h5>
+      <canvas id="departmentChart"></canvas>
+    </div>
+    <div class="col-md-6">
+      <h5>🌍 Country Distribution of Labels</h5>
+      <canvas id="countryChart"></canvas>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-12">
+      <h5>🎯 MITRE Tactics Breakdown</h5>
+      <canvas id="mitreChart"></canvas>
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <h4>🕒 Recent Taxonomy Activity</h4>
+  <table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>Record ID</th>
+        <th>Source</th>
+        <th>Classifier</th>
+        <th>Generated At</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for label in recent_labels %}
+      <tr>
+        <td>{{ label.record_id }}</td>
+        <td>{{ label.data_source }}</td>
+        <td>{{ label.classification_source }}</td>
+        <td>{{ label.labels_generated_at }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+function renderChart(ctxId, labels, values, label, bgColor = 'rgba(54, 162, 235, 0.7)', type = 'bar') {
+  new Chart(document.getElementById(ctxId), {
+    type: type,
+    data: {
+      labels: labels,
+      datasets: [{ label: label, data: values, backgroundColor: bgColor }]
+    },
+    options: { responsive: true, plugins: { legend: { display: false } } }
+  });
+}
+
+renderChart('sourceChart', JSON.parse('{{ source_labels|escapejs }}'), JSON.parse('{{ source_values|escapejs }}'), 'Label Count by Data Source');
+renderChart('classificationChart', JSON.parse('{{ class_labels|escapejs }}'), JSON.parse('{{ class_values|escapejs }}'), 'LLM vs ML Classification Volume', 'rgba(255, 99, 132, 0.7)');
+renderChart('impactChart', JSON.parse('{{ impact_labels|escapejs }}'), JSON.parse('{{ impact_values|escapejs }}'), 'Top Impact Types');
+renderChart('osChart', JSON.parse('{{ os_labels|escapejs }}'), JSON.parse('{{ os_values|escapejs }}'), 'Operating Systems');
+renderChart('platformChart', JSON.parse('{{ platform_labels|escapejs }}'), JSON.parse('{{ platform_values|escapejs }}'), 'Platforms');
+renderChart('softwareChart', JSON.parse('{{ software_labels|escapejs }}'), JSON.parse('{{ software_values|escapejs }}'), 'Software');
+renderChart('departmentChart', JSON.parse('{{ department_labels|escapejs }}'), JSON.parse('{{ department_values|escapejs }}'), 'Departments');
+renderChart('countryChart', JSON.parse('{{ country_labels|escapejs }}'), JSON.parse('{{ country_values|escapejs }}'), 'Countries');
+renderChart('mitreChart', JSON.parse('{{ mitre_labels|escapejs }}'), JSON.parse('{{ mitre_values|escapejs }}'), 'MITRE Tactics', 'rgba(255, 206, 86, 0.7)', 'polarArea');
+</script>
+{% endblock %}

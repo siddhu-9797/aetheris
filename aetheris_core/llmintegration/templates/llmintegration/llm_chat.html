@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+  .chat-container {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .chat-bubble {
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+  .chat-user {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+  .chat-bot {
+    background-color: #e5e5ea;
+    align-self: flex-start;
+    margin-right: auto;
+  }
+  .chat-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
+<div class="container mt-5">
+  <h2 class="mb-4">🧠 Gemini Threat Assistant</h2>
+  <div class="chat-container chat-wrapper">
+    {% if history %}
+      {% for message in history %}
+        <div class="chat-bubble {{ message.role }}">
+          <strong>{{ message.role|title }}:</strong><br>
+          {{ message.text|safe }}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  <form method="post" class="sticky-bottom">
+    {% csrf_token %}
+    <div class="input-group">
+      <input type="text" name="user_input" class="form-control" placeholder="Type your threat question..." required>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

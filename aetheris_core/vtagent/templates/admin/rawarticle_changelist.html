@@ -1,0 +1,8 @@
+{% extends "admin/change_list.html" %}
+
+{% block object-tools-items %}
+  {{ block.super }}
+  <li>
+    <a href="{% url 'admin:vectorize_raw_articles' %}" class="addlink">Vectorize Raw Articles</a>
+  </li>
+{% endblock %}

@@ -1,0 +1,269 @@
+{
+"Server": {
+"SOFTWARE": ["Operating System", "Database", "Web Server", "Virtualization Platform"],
+"SOFTWARE_VERSIONS": ["Windows Server 2019", "Windows Server 2022", "Ubuntu 22.04", "RHEL 8", "MySQL 8.0", "PostgreSQL 14", "Apache 2.4", "NGINX 1.20", "VMware ESXi 7.0", "Hyper-V Server 2019"],
+"SOFTWARE_VENDOR": ["Microsoft", "Canonical", "Red Hat", "Oracle", "The Apache Software Foundation", "VMware"],
+"HARDWARE_VENDOR": ["Dell", "HP", "Lenovo", "Cisco", "Supermicro"],
+"HARDWARE_MODEL": ["PowerEdge R750", "ProLiant DL380 Gen11", "ThinkSystem SR650", "UCS C240 M6", "SuperServer SYS-2029U-TR4T"],
+"FIRMWARE": ["iDRAC", "iLO", "IMM", "CIMC", "IPMI"],
+"FIRMWARE_VERSION": ["5.00.00.00", "2.70", "TCOM00A6", "4.2(1)", "3.9"]
+},
+"Workstation": {
+"SOFTWARE": ["Operating System", "Productivity Suite", "Web Browser", "Security Software"],
+"SOFTWARE_VERSIONS": ["Windows 10 Enterprise", "Windows 11 Pro", "macOS Monterey", "macOS Ventura", "Microsoft Office 365", "Google Workspace", "Chrome 114", "Firefox 115", "Endpoint Security 10", "Antivirus Plus 2023"],
+"SOFTWARE_VENDOR": ["Microsoft", "Apple", "Google", "Mozilla", "CrowdStrike", "McAfee"],
+"HARDWARE_VENDOR": ["Dell", "HP", "Lenovo", "Apple"],
+"HARDWARE_MODEL": ["OptiPlex 7000", "EliteDesk 800 G9", "ThinkStation P360", "iMac 27-inch"],
+"FIRMWARE": ["BIOS", "UEFI"],
+"FIRMWARE_VERSION": ["1.12.0", "N23", "M23KT49A", "429.0.0.0.0"]
+},
+"Laptop": {
+"SOFTWARE": ["Operating System", "Productivity Suite", "Web Browser", "VPN Client"],
+"SOFTWARE_VERSIONS": ["Windows 10 Enterprise", "Windows 11 Pro", "macOS Monterey", "macOS Ventura", "Microsoft Office 365", "Google Workspace", "Chrome 114", "Firefox 115", "Cisco AnyConnect 4.9", "NordVPN 8"],
+"SOFTWARE_VENDOR": ["Microsoft", "Apple", "Google", "Mozilla", "Cisco", "NordVPN"],
+"HARDWARE_VENDOR": ["Dell", "HP", "Lenovo", "Apple"],
+"HARDWARE_MODEL": ["Latitude 9530", "EliteBook 860 G9", "ThinkPad X1 Carbon Gen 10", "MacBook Pro 16-inch"],
+"FIRMWARE": ["BIOS", "UEFI"],
+"FIRMWARE_VERSION": ["1.18.0", "U70", "N32ET62W", "840.4.1.0.0"]
+},
+"Router": {
+"SOFTWARE": ["Operating System", "Management Software"],
+"SOFTWARE_VERSIONS": ["Cisco IOS 15.8", "Juniper Junos 22.4R1", "Arista EOS 4.28", "Huawei VRP 8", "SolarWinds Network Configuration Manager"],
+"SOFTWARE_VENDOR": ["Cisco", "Juniper Networks", "Arista Networks", "Huawei", "SolarWinds"],
+"HARDWARE_VENDOR": ["Cisco", "Juniper Networks", "Arista Networks", "Huawei"],
+"HARDWARE_MODEL": ["ISR 4331", "MX204", "7050CX3-32S", "NetEngine 40E"],
+"FIRMWARE": ["ROMMON"],
+"FIRMWARE_VERSION": ["16.12(3r)", "22.4R1.12", "4.28.1F", "V800R012C00"]
+},
+"Switch": {
+"SOFTWARE": ["Operating System", "Management Software"],
+"SOFTWARE_VERSIONS": ["Cisco IOS 15.8", "Juniper Junos 22.4R1", "Arista EOS 4.28", "HP ProVision 16.02", "Cisco Prime Infrastructure"],
+"SOFTWARE_VENDOR": ["Cisco", "Juniper Networks", "Arista Networks", "HP", "SolarWinds"],
+"HARDWARE_VENDOR": ["Cisco", "Juniper Networks", "Arista Networks", "HP"],
+"HARDWARE_MODEL": ["Catalyst 9300", "EX2300", "7050S3-48C8UM", "Aruba 6300M"],
+"FIRMWARE": ["ROMMON"],
+"FIRMWARE_VERSION": ["16.12(3r)", "22.4R1.12", "4.28.1F", "WB.16.08.0004"]
+},
+"Firewall": {
+"SOFTWARE": ["Operating System", "Management Software"],
+"SOFTWARE_VERSIONS": ["PAN-OS 10.2", "FortiOS 7.2", "Cisco ASA 9.16", "Check Point R81", "Juniper SRXOS 22.4R1"],
+"SOFTWARE_VENDOR": ["Palo Alto Networks", "Fortinet", "Cisco", "Check Point", "Juniper Networks"],
+"HARDWARE_VENDOR": ["Palo Alto Networks", "Fortinet", "Cisco", "Check Point", "Juniper Networks"],
+"HARDWARE_MODEL": ["PA-440", "FortiGate 100F", "ASA 5506-X", "Quantum Security Gateway 6200", "SRX300"],
+"FIRMWARE": ["Boot ROM"],
+"FIRMWARE_VERSION": ["10.2.3", "7.2.1", "9.16(4)17", "R81.10", "22.4R1.12"]
+},
+"Printer": {
+"SOFTWARE": ["Firmware", "Management Software"],
+"SOFTWARE_VERSIONS": ["Version 5.4", "Web Jetadmin"],
+"SOFTWARE_VENDOR": ["HP", "Epson", "Canon", "Xerox"],
+"HARDWARE_VENDOR": ["HP", "Epson", "Canon", "Xerox"],
+"HARDWARE_MODEL": ["LaserJet Enterprise M612dn", "EcoTank ET-4850", "imageRUNNER ADVANCE DX C5870i", "VersaLink C7030"],
+"FIRMWARE": ["Bootcode"],
+"FIRMWARE_VERSION": ["4.9.4.4", "12.08.04.29", "03.09.00", "112.000.01.09000"]
+},
+"IP Camera": {
+"SOFTWARE": ["Firmware", "VMS Software"],
+"SOFTWARE_VERSIONS": ["4.5.0", "ExacqVision"],
+"SOFTWARE_VENDOR": ["Axis Communications", "Hikvision", "Dahua Technology", "Bosch"],
+"HARDWARE_VENDOR": ["Axis Communications", "Hikvision", "Dahua Technology", "Bosch"],
+"HARDWARE_MODEL": ["AXIS P1455-LE", "DS-2CD2043G2-I", "IPC-HFW5442T-ASE", "MIC Inteox 7000i"],
+"FIRMWARE": ["System Firmware"],
+"FIRMWARE_VERSION": ["10.11", "V5.5.88", "DH_V4.0", "8.30"]
+},
+"VM": {
+"SOFTWARE": ["Operating System", "Hypervisor Tools"],
+"SOFTWARE_VERSIONS": ["Windows Server 2019", "Ubuntu 20.04", "CentOS 7", "VMware Tools 12.0", "Hyper-V Integration Services"],
+"SOFTWARE_VENDOR": ["Microsoft", "Canonical", "Red Hat", "VMware"],
+"HARDWARE_VENDOR": ["VMware", "Hyper-V", "KVM"],
+"HARDWARE_MODEL": ["Virtual Machine"],
+"FIRMWARE": ["BIOS"],
+"FIRMWARE_VERSION": ["VMBios", "4.5"]
+},
+"Container": {
+"SOFTWARE": ["Container Runtime", "Orchestration Platform"],
+"SOFTWARE_VERSIONS": ["Docker 20.10", "containerd 1.6", "Kubernetes 1.25", "OpenShift 4.10"],
+"SOFTWARE_VENDOR": ["Docker", "CNCF", "Red Hat"],
+"HARDWARE_VENDOR": ["Generic"],
+"HARDWARE_MODEL": ["Container"],
+"FIRMWARE": ["N/A"],
+"FIRMWARE_VERSION": ["N/A"]
+},
+"Mobile Device": {
+"SOFTWARE": ["Operating System", "MDM Agent"],
+"SOFTWARE_VERSIONS": ["iOS 16", "Android 13", "Intune Company Portal", "Workspace ONE Intelligent Hub"],
+"SOFTWARE_VENDOR": ["Apple", "Google", "Microsoft", "VMware"],
+"HARDWARE_VENDOR": ["Apple", "Samsung", "Google", "OnePlus"],
+"HARDWARE_MODEL": ["iPhone 14 Pro", "Galaxy S23", "Pixel 7", "Nord N20"],
+"FIRMWARE": ["Baseband"],
+"FIRMWARE_VERSION": ["16.1", "5.15.78", "g5300.0-2023020217", "12553131"]
+},
+"Hypervisor": {
+"SOFTWARE": ["Hypervisor"],
+"SOFTWARE_VERSIONS": ["VMware ESXi 7.0", "Microsoft Hyper-V Server 2019", "KVM 4.2"],
+"SOFTWARE_VENDOR": ["VMware", "Microsoft", "Red Hat"],
+"HARDWARE_VENDOR": ["Dell", "HP", "Lenovo", "Supermicro"],
+"HARDWARE_MODEL": ["ESXi on PowerEdge", "Hyper-V on ProLiant", "KVM on ThinkServer", "vSphere"],
+"FIRMWARE": ["BMC"],
+"FIRMWARE_VERSION": ["7.0 U3", "20H2", "4.2.0", "7.0"]
+},
+"Storage Array": {
+"SOFTWARE": ["Storage OS", "Management Software"],
+"SOFTWARE_VERSIONS": ["Dell PowerStoreOS 3.0", "NetApp ONTAP 9.8", "HPE Primera OS 4.3", "IBM Spectrum Virtualize 8.5", "Pure Storage Purity//OE 6.1"],
+"SOFTWARE_VENDOR": ["Dell", "NetApp", "HPE", "IBM", "Pure Storage"],
+"HARDWARE_VENDOR": ["Dell", "NetApp", "HPE", "IBM", "Pure Storage"],
+"HARDWARE_MODEL": ["PowerStore 1000", "AFF A250", "Primera A670", "Storwize V7000", "FlashArray//X20R3"],
+"FIRMWARE": ["Drive Firmware", "Controller Firmware"],
+"FIRMWARE_VERSION": ["A.00", "9.8P1", "4.3.0", "8.5.1", "6.1.5"]
+},
+"Load Balancer": {
+"SOFTWARE": ["Operating System", "Load Balancing Software"],
+"SOFTWARE_VERSIONS": ["F5 TMOS 16.1", "NGINX Plus R28", "Citrix ADC 13.1", "HAProxy 2.4", "AWS ELB"],
+"SOFTWARE_VENDOR": ["F5 Networks", "NGINX", "Citrix", "HAProxy Technologies", "Amazon"],
+"HARDWARE_VENDOR": ["F5 Networks", "Citrix", "Various (for software-based)"],
+"HARDWARE_MODEL": ["BIG-IP LTM", "NetScaler ADC", "NGINX Plus", "HAProxy"],
+"FIRMWARE": ["BIOS"],
+"FIRMWARE_VERSION": ["16.1.2", "13.1 build 49.16", "R28", "2.4.14"]
+},
+"Industrial Control System (ICS)": {
+"SOFTWARE": ["Operating System", "SCADA Software", "PLC Firmware"],
+"SOFTWARE_VERSIONS": ["Windows Embedded 7", "QNX 7", "RSLogix 5000 20.0", "Siemens SIMATIC WinCC 7.5", "Modicon Unity Pro 12.0"],
+"SOFTWARE_VENDOR": ["Microsoft", "BlackBerry Limited", "Rockwell Automation", "Siemens", "Schneider Electric"],
+"HARDWARE_VENDOR": ["Rockwell Automation", "Siemens", "Schneider Electric", "General Electric"],
+"HARDWARE_MODEL": ["ControlLogix PLC", "SIMATIC S7-1500", "Modicon M580", "GE RX3i"],
+"FIRMWARE": ["PLC Firmware"],
+"FIRMWARE_VERSION": ["CP17", "V8.2", "4.0", "10.1"]
+},
+"IoT Device": {
+"SOFTWARE": ["Firmware", "Application Software"],
+"SOFTWARE_VERSIONS": ["1.2.3", "SmartThings Hub Firmware", "Home Assistant"],
+"SOFTWARE_VENDOR": ["Various", "Samsung", "Open Source"],
+"HARDWARE_VENDOR": ["Various", "Samsung", "Philips", "Nest", "Amazon"],
+"HARDWARE_MODEL": ["Smart Thermostat", "Smart Lock", "Smart Speaker", "Smart Lighting", "Industrial IoT Gateway"],
+"FIRMWARE": ["System Firmware"],
+"FIRMWARE_VERSION": ["2.10", "27.14", "1.8", "3.2"]
+},
+"Enterprise Application": {
+    "APP_NAME": ["SAP ERP", "NetSuite", "Salesforce", "Jira", "Confluence", "SharePoint", "Planview"],
+    "APP_VERSION": ["S/4HANA 2022", "2023.1", "Winter '24", "9.0.1", "8.5", "Online", "16.2"],
+    "APP_VENDOR": ["SAP", "Oracle NetSuite", "Salesforce", "Atlassian", "Microsoft", "Planview"],
+    "MODULES": ["FI/CO", "CRM", "SCM", "Project Management", "Knowledge Base", "Collaboration"],  //  e.g., SAP modules
+    "DATABASE_VENDOR": ["SAP HANA", "Oracle", "PostgreSQL", "Microsoft SQL Server"],  //  Underlying database
+    "DATABASE_VERSION": ["2.0", "19c", "13", "2019"],
+    "SERVER_OS": ["RHEL", "Windows Server"],  //  OS it runs on
+    "SERVER_OS_VERSION": ["8", "2019"],
+    "PLUGINS": ["Jira-Xray", "Jira-eazyBI", "Jira-ScriptRunner"],  //  e.g., Jira plugins
+    "INTEGRATIONS": ["LDAP", "SAML", "API_XYZ"],  //  How it connects to other systems
+    "CUSTOMIZATIONS": ["Custom Report 1", "Workflow X"]  //  Important for vulnerabilities
+},
+SECURITY_SOFTWARE = {
+    "Endpoint Security": [
+        {
+            "VENDOR": "CrowdStrike",
+            "PRODUCT": "Falcon Insight",
+            "VERSION": ["6.45", "7.01", "7.10"],
+            "MODULES": ["Endpoint Detection and Response (EDR)", "Next-Gen Antivirus (NGAV)", "Threat Intelligence"],
+            "OS_SUPPORT": ["Windows", "macOS", "Linux"]
+        },
+        {
+            "VENDOR": "Microsoft",
+            "PRODUCT": "Defender for Endpoint",
+            "VERSION": ["10.0.19044", "10.0.22000"],
+            "MODULES": ["Endpoint Detection and Response (EDR)", "Antivirus", "Vulnerability Management"],
+            "OS_SUPPORT": ["Windows"]
+        },
+        {
+            "VENDOR": "McAfee",
+            "PRODUCT": "Endpoint Security",
+            "VERSION": ["10.7", "11.0"],
+            "MODULES": ["Endpoint Protection", "Threat Prevention", "Web Control"],
+            "OS_SUPPORT": ["Windows", "macOS", "Linux"]
+        },
+        {
+            "VENDOR": "SentinelOne",
+            "PRODUCT": "Singularity XDR",
+            "VERSION": ["23.2.1.411", "23.3.1.22"],
+            "MODULES": ["Endpoint Detection and Response (EDR)", "ActiveEDR", "Ranger IoT Security"],
+            "OS_SUPPORT": ["Windows", "macOS", "Linux"]
+        },
+        {
+            "VENDOR": "Cylance",
+            "PRODUCT": "PROTECT",
+            "VERSION": ["2.1.1540"],
+            "MODULES": ["AI-Powered Antivirus", "Threat Prevention"],
+            "OS_SUPPORT": ["Windows", "macOS"]
+        },
+        {
+            "VENDOR": "Carbon Black",
+            "PRODUCT": "Cloud Endpoint Standard",
+            "VERSION": ["3.8"],
+            "MODULES": ["Endpoint Detection and Response (EDR)", "Next-Generation Antivirus"],
+            "OS_SUPPORT": ["Windows", "macOS", "Linux"]
+        }
+    ],
+    "Network Security": [
+        {
+            "VENDOR": "Palo Alto Networks",
+            "PRODUCT": "Next-Generation Firewall",
+            "VERSION": ["10.2", "11.0"],
+            "FEATURES": ["Intrusion Prevention", "Application Visibility", "URL Filtering"]
+        },
+        {
+            "VENDOR": "Fortinet",
+            "PRODUCT": "FortiGate",
+            "VERSION": ["7.2", "7.4"],
+            "FEATURES": ["Firewall", "VPN", "Web Filtering"]
+        }
+
+    ],
+    "Other": [
+        {
+            "VENDOR": "Qualys",
+            "PRODUCT": "Cloud Agent",
+            "VERSION": ["4.15"],
+            "PURPOSE": "Vulnerability Management"
+        },
+        {
+            "VENDOR": "Tenable",
+            "PRODUCT": "Nessus Agent",
+            "VERSION": ["10.5"],
+            "PURPOSE": "Vulnerability Scanning"
+        }
+    ]
+},
+NETWORK_ZONES = {
+    "Core Network": [
+        {"ZONE": "HQ LAN", "LOCATION": "Headquarters", "PURPOSE": "General employee network"},
+        {"ZONE": "Branch LAN", "LOCATION": "Branch Office", "PURPOSE": "General employee network at branch"},
+        {"ZONE": "Data Center LAN", "LOCATION": "Data Center", "PURPOSE": "Servers and critical systems"},
+        {"ZONE": "DMZ", "LOCATION": "Data Center", "PURPOSE": "Public-facing servers"},
+        {"ZONE": "WAN", "LOCATION": "Interconnected", "PURPOSE": "Connectivity between sites"}
+    ],
+    "Cloud": [
+        {"ZONE": "Cloud AWS", "LOCATION": "AWS Region", "PURPOSE": "AWS-hosted resources", "SERVICES": ["EC2", "S3"]},
+        {"ZONE": "Cloud Azure", "LOCATION": "Azure Region", "PURPOSE": "Azure-hosted resources", "SERVICES": ["VMs", "Storage"]}
+    ],
+    "Access Control": [
+        {"ZONE": "Wireless LAN", "LOCATION": "Various", "PURPOSE": "Employee and guest wireless access"},
+        {"ZONE": "VPN", "LOCATION": "Remote", "PURPOSE": "Remote employee access"},
+        {"ZONE": "Guest Network", "LOCATION": "Various", "PURPOSE": "Guest internet access"},
+        {"ZONE": "Zero Trust Network", "LOCATION": "Various", "PURPOSE": "Micro-segmented access"}
+    ],
+    "Specialized": [
+        {"ZONE": "OT Network", "LOCATION": "Manufacturing", "PURPOSE": "Operational Technology"},
+        {"ZONE": "IoT Network", "LOCATION": "Various", "PURPOSE": "Internet of Things devices"}
+    ]
+},
+"Building Access Control": {
+    "SYSTEM_NAME": ["Lenel OnGuard", "Software House C•CURE 9000", "Honeywell Pro-Watch", "Gallagher Command Centre"],
+    "SYSTEM_VERSION": ["8.1", "3.0", "5.4", "8.80"],
+    "VENDOR": ["LenelS2", "Johnson Controls", "Honeywell", "Gallagher"],
+    "CONTROLLER_MODEL": ["LNL-4000", "iSTAR Edge G2", "PW6000", "T12"],
+    "READER_TYPE": ["Proximity", "Smart Card", "Biometric", "Mobile"],
+    "CARD_TECHNOLOGY": ["HID Prox", "HID iCLASS", "DESFire EV2"],
+    "BIOMETRIC_TYPE": ["Fingerprint", "Facial Recognition", "Iris Scan"],
+    "DOOR_HARDWARE": ["Electric Strike", "Magnetic Lock", "Turnstile"],
+    "INTEGRATIONS": ["Active Directory", "Video Management System", "HR Database"],
+    "COMMUNICATION_PROTOCOL": ["TCP/IP", "RS-485", "Wiegand"]
+}
+}

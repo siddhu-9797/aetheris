@@ -1,0 +1,8 @@
+2025-04-05 10:23:01,656 - INFO - Starting vectorization process...
+2025-04-05 10:23:01,694 - INFO - Vectorized 101 articles with shape (101, 512)
+2025-04-05 10:23:01,696 - INFO - FAISS index created and saved to C:\Projects\Aetheris_POC\aetheris_core\vtagent\faiss_index.index
+2025-04-05 10:23:01,696 - INFO - Vectorization completed successfully.
+2025-04-05 10:43:24,700 - INFO - Starting vectorization process...
+2025-04-05 10:43:24,733 - INFO - Vectorized 101 articles with shape (101, 512)
+2025-04-05 10:43:24,738 - INFO - FAISS index created and saved to C:\Projects\Aetheris_POC\aetheris_core\aetheris_core\faiss_index_classified_articles.index
+2025-04-05 10:43:24,739 - INFO - Vectorization completed successfully.

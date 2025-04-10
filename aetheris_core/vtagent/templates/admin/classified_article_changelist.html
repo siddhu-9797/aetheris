@@ -1,0 +1,9 @@
+{% extends "admin/change_list.html" %}
+{% load static %}
+
+{% block object-tools %}
+    {{ block.super }}
+    <li>
+        <a href="{% url 'admin:classify_raw_articles' %}"class="addlink">Classify Raw Articles</a>
+    </li>
+{% endblock %}

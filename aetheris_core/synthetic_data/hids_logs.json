@@ -1,0 +1,5419 @@
+[
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-86.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.38.78",
+    "username": "William Barron",
+    "email": "william.barron@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-79.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.0.92",
+    "username": "Taylor Cross",
+    "email": "taylor.cross@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-68.dc-germany-3.aetheris.security",
+    "ip_address": "10.104.172.7",
+    "username": "Kayla James",
+    "email": "kayla.james@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-19.dc-germany-3.aetheris.security",
+    "ip_address": "172.16.128.152",
+    "username": "Ashley Christian",
+    "email": "ashley.christian@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Security",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-23.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.198.82",
+    "username": "Robert Dunn",
+    "email": "robert.dunn@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-21.dc-germany-3.aetheris.security",
+    "ip_address": "10.59.16.149",
+    "username": "Lisa Evans",
+    "email": "lisa.evans@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-59.dc-germany-3.aetheris.security",
+    "ip_address": "172.21.3.13",
+    "username": "Gene Conley",
+    "email": "gene.conley@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-32.dc-germany-3.aetheris.security",
+    "ip_address": "172.17.7.25",
+    "username": "Michelle Sandoval",
+    "email": "michelle.sandoval@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "QA",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-95.dc-germany-3.aetheris.security",
+    "ip_address": "10.199.129.3",
+    "username": "Melissa Sanchez",
+    "email": "melissa.sanchez@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Security",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-28.dc-germany-3.aetheris.security",
+    "ip_address": "10.63.60.26",
+    "username": "Rhonda White",
+    "email": "rhonda.white@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-28.dc-germany-3.aetheris.security",
+    "ip_address": "10.188.50.249",
+    "username": "Gregory Mahoney",
+    "email": "gregory.mahoney@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-98.dc-germany-3.aetheris.security",
+    "ip_address": "10.241.113.33",
+    "username": "Stephanie Rodriguez",
+    "email": "stephanie.rodriguez@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-29.dc-germany-3.aetheris.security",
+    "ip_address": "172.28.190.41",
+    "username": "Robert Lee",
+    "email": "robert.lee@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-99.dc-germany-3.aetheris.security",
+    "ip_address": "172.24.28.28",
+    "username": "Rebecca Mcdowell",
+    "email": "rebecca.mcdowell@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-31.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.169.71",
+    "username": "Brandon Hernandez",
+    "email": "brandon.hernandez@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-99.dc-germany-3.aetheris.security",
+    "ip_address": "10.161.13.80",
+    "username": "Robert Lowe",
+    "email": "robert.lowe@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-40.dc-germany-3.aetheris.security",
+    "ip_address": "172.24.133.165",
+    "username": "Andrew Richard",
+    "email": "andrew.richard@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-85.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.171.241",
+    "username": "Diana Jones",
+    "email": "diana.jones@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-56.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.168.2",
+    "username": "Tyler Alvarez",
+    "email": "tyler.alvarez@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-49.dc-germany-3.aetheris.security",
+    "ip_address": "10.62.207.244",
+    "username": "Robert Davis",
+    "email": "robert.davis@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-65.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.192.194",
+    "username": "Shawn Hunter",
+    "email": "shawn.hunter@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-53.dc-germany-3.aetheris.security",
+    "ip_address": "172.22.57.150",
+    "username": "Stacey Robinson",
+    "email": "stacey.robinson@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-92.dc-germany-3.aetheris.security",
+    "ip_address": "10.181.89.24",
+    "username": "Carrie Campos",
+    "email": "carrie.campos@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-74.dc-germany-3.aetheris.security",
+    "ip_address": "10.239.236.196",
+    "username": "Kevin Bernard",
+    "email": "kevin.bernard@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-20.dc-germany-3.aetheris.security",
+    "ip_address": "10.50.46.44",
+    "username": "Steven Morales",
+    "email": "steven.morales@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-76.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.126.135",
+    "username": "Katelyn Nelson",
+    "email": "katelyn.nelson@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-32.dc-germany-3.aetheris.security",
+    "ip_address": "10.202.176.10",
+    "username": "Jeremy Leblanc",
+    "email": "jeremy.leblanc@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-11.dc-germany-3.aetheris.security",
+    "ip_address": "10.20.129.126",
+    "username": "Sarah Reeves",
+    "email": "sarah.reeves@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-67.dc-germany-3.aetheris.security",
+    "ip_address": "10.15.156.197",
+    "username": "Alexis Jones",
+    "email": "alexis.jones@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-65.dc-germany-3.aetheris.security",
+    "ip_address": "172.31.13.210",
+    "username": "Rickey Jackson",
+    "email": "rickey.jackson@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-53.dc-germany-3.aetheris.security",
+    "ip_address": "172.29.200.229",
+    "username": "Stacy Smith",
+    "email": "stacy.smith@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-62.dc-germany-3.aetheris.security",
+    "ip_address": "172.28.236.179",
+    "username": "David Smith",
+    "email": "david.smith@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-71.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.167.138",
+    "username": "Michelle Webster",
+    "email": "michelle.webster@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-14.dc-germany-3.aetheris.security",
+    "ip_address": "172.20.92.188",
+    "username": "Kelly Ramirez",
+    "email": "kelly.ramirez@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-80.dc-germany-3.aetheris.security",
+    "ip_address": "10.119.45.1",
+    "username": "Rebecca Wilson",
+    "email": "rebecca.wilson@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-86.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.31.224",
+    "username": "Teresa Jackson",
+    "email": "teresa.jackson@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-71.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.229.70",
+    "username": "Sarah Jackson",
+    "email": "sarah.jackson@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-33.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.74.23",
+    "username": "Julia Martinez",
+    "email": "julia.martinez@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-27.dc-germany-3.aetheris.security",
+    "ip_address": "10.104.233.61",
+    "username": "Rebecca Mullins",
+    "email": "rebecca.mullins@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-87.dc-germany-3.aetheris.security",
+    "ip_address": "172.17.96.239",
+    "username": "John Robinson",
+    "email": "john.robinson@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-30.dc-germany-3.aetheris.security",
+    "ip_address": "10.45.212.181",
+    "username": "Courtney Thomas",
+    "email": "courtney.thomas@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-36.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.57.38",
+    "username": "Matthew Holder",
+    "email": "matthew.holder@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-49.dc-germany-3.aetheris.security",
+    "ip_address": "172.22.28.120",
+    "username": "Gregory Hopkins",
+    "email": "gregory.hopkins@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-15.dc-germany-3.aetheris.security",
+    "ip_address": "172.25.62.64",
+    "username": "Emma Huynh",
+    "email": "emma.huynh@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-65.dc-germany-3.aetheris.security",
+    "ip_address": "172.30.219.239",
+    "username": "Todd Peck",
+    "email": "todd.peck@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-21.dc-germany-3.aetheris.security",
+    "ip_address": "10.6.13.198",
+    "username": "Lisa Stone",
+    "email": "lisa.stone@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-41.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.207.226",
+    "username": "Tina Torres",
+    "email": "tina.torres@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-98.dc-germany-3.aetheris.security",
+    "ip_address": "10.217.63.108",
+    "username": "Keith Gonzales",
+    "email": "keith.gonzales@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "server-45.dc-germany-3.aetheris.security",
+    "ip_address": "10.251.148.177",
+    "username": "Debbie Wong",
+    "email": "debbie.wong@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "QA",
+    "asset_type": "Server",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-44.dc-germany-3.aetheris.security",
+    "ip_address": "172.21.67.130",
+    "username": "Amber Soto",
+    "email": "amber.soto@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-44.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.51.65",
+    "username": "Robert Gonzalez",
+    "email": "robert.gonzalez@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-91.dc-germany-3.aetheris.security",
+    "ip_address": "10.11.85.46",
+    "username": "James Jackson",
+    "email": "james.jackson@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-67.dc-germany-3.aetheris.security",
+    "ip_address": "10.15.156.197",
+    "username": "Sharon Chapman",
+    "email": "sharon.chapman@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-92.dc-germany-3.aetheris.security",
+    "ip_address": "172.28.3.188",
+    "username": "Kelly Jones",
+    "email": "kelly.jones@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Security",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-86.dc-germany-3.aetheris.security",
+    "ip_address": "10.59.144.145",
+    "username": "Brianna Harris",
+    "email": "brianna.harris@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-32.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.12.99",
+    "username": "Alyssa Hull",
+    "email": "alyssa.hull@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-69.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.24.82",
+    "username": "Karen Duncan",
+    "email": "karen.duncan@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-68.dc-germany-3.aetheris.security",
+    "ip_address": "10.226.167.107",
+    "username": "Alexander Mcdonald",
+    "email": "alexander.mcdonald@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-14.dc-germany-3.aetheris.security",
+    "ip_address": "10.76.254.148",
+    "username": "Frank Russo",
+    "email": "frank.russo@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-45.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.6.157",
+    "username": "Frank Taylor",
+    "email": "frank.taylor@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-70.dc-germany-3.aetheris.security",
+    "ip_address": "172.20.91.13",
+    "username": "Philip Lopez",
+    "email": "philip.lopez@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-71.dc-germany-3.aetheris.security",
+    "ip_address": "10.244.170.239",
+    "username": "Sandra Williams",
+    "email": "sandra.williams@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Sales Team A",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-56.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.13.106",
+    "username": "David White",
+    "email": "david.white@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-32.dc-germany-3.aetheris.security",
+    "ip_address": "10.190.88.64",
+    "username": "Kim Davis",
+    "email": "kim.davis@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-28.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.144.138",
+    "username": "Mark Chang",
+    "email": "mark.chang@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-76.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.240.210",
+    "username": "Michael Reynolds",
+    "email": "michael.reynolds@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-82.dc-germany-3.aetheris.security",
+    "ip_address": "10.117.69.158",
+    "username": "Marcus Campbell",
+    "email": "marcus.campbell@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-76.dc-germany-3.aetheris.security",
+    "ip_address": "172.20.7.65",
+    "username": "David Campbell",
+    "email": "david.campbell@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-10.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.108.102",
+    "username": "Jennifer Dean",
+    "email": "jennifer.dean@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-30.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.213.238",
+    "username": "Jacqueline Wright",
+    "email": "jacqueline.wright@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-10.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.109.86",
+    "username": "Melissa Ford",
+    "email": "melissa.ford@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-82.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.27.154",
+    "username": "Joshua Bates",
+    "email": "joshua.bates@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-61.dc-germany-3.aetheris.security",
+    "ip_address": "172.22.9.221",
+    "username": "Scott Acosta",
+    "email": "scott.acosta@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-47.dc-germany-3.aetheris.security",
+    "ip_address": "10.31.150.63",
+    "username": "Denise Wright",
+    "email": "denise.wright@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "server-64.dc-germany-3.aetheris.security",
+    "ip_address": "10.30.82.19",
+    "username": "Candice Ramos",
+    "email": "candice.ramos@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Security",
+    "asset_type": "Server",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-97.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.0.185",
+    "username": "Kirsten Villanueva",
+    "email": "kirsten.villanueva@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-82.dc-germany-3.aetheris.security",
+    "ip_address": "172.28.110.69",
+    "username": "Cynthia Murphy",
+    "email": "cynthia.murphy@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-15.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.73.229",
+    "username": "Michael Lozano",
+    "email": "michael.lozano@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-58.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.216.203",
+    "username": "Christine Frazier",
+    "email": "christine.frazier@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "QA",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-69.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.207.154",
+    "username": "Michelle Brennan",
+    "email": "michelle.brennan@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-39.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.20.255",
+    "username": "Susan Hayes",
+    "email": "susan.hayes@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "server-94.dc-germany-3.aetheris.security",
+    "ip_address": "172.29.243.191",
+    "username": "Kimberly Gibson",
+    "email": "kimberly.gibson@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Security",
+    "asset_type": "Server",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-36.dc-germany-3.aetheris.security",
+    "ip_address": "172.17.170.48",
+    "username": "Rick Kemp",
+    "email": "rick.kemp@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-86.dc-germany-3.aetheris.security",
+    "ip_address": "172.30.47.126",
+    "username": "Riley Garner",
+    "email": "riley.garner@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-49.dc-germany-3.aetheris.security",
+    "ip_address": "10.111.78.233",
+    "username": "George Carlson",
+    "email": "george.carlson@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-23.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.190.72",
+    "username": "Tina Lopez",
+    "email": "tina.lopez@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-38.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.23.50",
+    "username": "Alisha Brown",
+    "email": "alisha.brown@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-88.dc-germany-3.aetheris.security",
+    "ip_address": "172.25.75.250",
+    "username": "Stephen White",
+    "email": "stephen.white@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-64.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.67.214",
+    "username": "Angela Harris",
+    "email": "angela.harris@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-56.dc-germany-3.aetheris.security",
+    "ip_address": "10.199.116.193",
+    "username": "Victor Martin",
+    "email": "victor.martin@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-62.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.205.99",
+    "username": "Justin Green",
+    "email": "justin.green@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-57.dc-germany-3.aetheris.security",
+    "ip_address": "172.30.241.240",
+    "username": "William Hart",
+    "email": "william.hart@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-45.dc-germany-3.aetheris.security",
+    "ip_address": "10.67.144.206",
+    "username": "Sarah Parker",
+    "email": "sarah.parker@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-50.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.183.8",
+    "username": "Theodore Jones",
+    "email": "theodore.jones@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-59.dc-germany-3.aetheris.security",
+    "ip_address": "172.21.3.13",
+    "username": "Tina Torres",
+    "email": "tina.torres@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-49.dc-germany-3.aetheris.security",
+    "ip_address": "10.233.91.242",
+    "username": "Jonathan Morris",
+    "email": "jonathan.morris@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-80.dc-germany-3.aetheris.security",
+    "ip_address": "10.43.78.60",
+    "username": "Randall Stewart",
+    "email": "randall.stewart@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-28.dc-germany-3.aetheris.security",
+    "ip_address": "10.213.122.59",
+    "username": "Ronald Brewer",
+    "email": "ronald.brewer@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "server-63.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.158.191",
+    "username": "Tracy Wilkins",
+    "email": "tracy.wilkins@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Security",
+    "asset_type": "Server",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-84.dc-germany-3.aetheris.security",
+    "ip_address": "172.21.75.115",
+    "username": "Kimberly Sanchez",
+    "email": "kimberly.sanchez@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Sales Team A",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-92.dc-germany-3.aetheris.security",
+    "ip_address": "172.18.194.58",
+    "username": "Crystal Marks",
+    "email": "crystal.marks@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "QA",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-31.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.134.233",
+    "username": "Robert Howard",
+    "email": "robert.howard@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-96.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.74.193",
+    "username": "Gabrielle Hayes",
+    "email": "gabrielle.hayes@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-20.dc-germany-3.aetheris.security",
+    "ip_address": "10.136.41.108",
+    "username": "Jose Mcgee",
+    "email": "jose.mcgee@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-27.dc-germany-3.aetheris.security",
+    "ip_address": "172.24.155.116",
+    "username": "Melissa Cook",
+    "email": "melissa.cook@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-44.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.245.151",
+    "username": "Laurie Shah",
+    "email": "laurie.shah@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-31.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.219.54",
+    "username": "Veronica Robinson",
+    "email": "veronica.robinson@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-10.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.253.49",
+    "username": "Andrew Lane",
+    "email": "andrew.lane@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-36.dc-germany-3.aetheris.security",
+    "ip_address": "10.61.190.143",
+    "username": "Ashley Pena",
+    "email": "ashley.pena@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-68.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.184.128",
+    "username": "Katie David",
+    "email": "katie.david@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-42.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.44.95",
+    "username": "Jacob Lozano",
+    "email": "jacob.lozano@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-62.dc-germany-3.aetheris.security",
+    "ip_address": "10.160.74.185",
+    "username": "Jillian Berry",
+    "email": "jillian.berry@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-16.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.38.252",
+    "username": "Candace Cordova",
+    "email": "candace.cordova@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-28.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.14.223",
+    "username": "Kevin Potter",
+    "email": "kevin.potter@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-70.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.216.253",
+    "username": "Chelsea Brown",
+    "email": "chelsea.brown@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-98.dc-germany-3.aetheris.security",
+    "ip_address": "10.217.63.108",
+    "username": "Lauren Nunez",
+    "email": "lauren.nunez@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-89.dc-germany-3.aetheris.security",
+    "ip_address": "10.223.32.11",
+    "username": "Anthony Armstrong",
+    "email": "anthony.armstrong@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Sales Team A",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-43.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.1.171",
+    "username": "David Jackson",
+    "email": "david.jackson@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-63.dc-germany-3.aetheris.security",
+    "ip_address": "10.4.71.167",
+    "username": "Yolanda Cross",
+    "email": "yolanda.cross@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-22.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.40.252",
+    "username": "Michael Schmidt",
+    "email": "michael.schmidt@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-35.dc-germany-3.aetheris.security",
+    "ip_address": "172.28.59.220",
+    "username": "Jason Smith",
+    "email": "jason.smith@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-12.dc-germany-3.aetheris.security",
+    "ip_address": "10.23.100.99",
+    "username": "Joseph Warren",
+    "email": "joseph.warren@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-12.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.29.189",
+    "username": "Nathan Owens",
+    "email": "nathan.owens@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-58.dc-germany-3.aetheris.security",
+    "ip_address": "172.16.187.186",
+    "username": "Emily Atkins",
+    "email": "emily.atkins@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-42.dc-germany-3.aetheris.security",
+    "ip_address": "10.41.65.76",
+    "username": "Melissa Robertson",
+    "email": "melissa.robertson@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Sales Team A",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-16.dc-germany-3.aetheris.security",
+    "ip_address": "10.209.119.20",
+    "username": "Eric Cowan",
+    "email": "eric.cowan@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-71.dc-germany-3.aetheris.security",
+    "ip_address": "10.125.21.171",
+    "username": "Daniel Collins",
+    "email": "daniel.collins@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-99.dc-germany-3.aetheris.security",
+    "ip_address": "172.21.54.120",
+    "username": "Joseph Lucero",
+    "email": "joseph.lucero@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-60.dc-germany-3.aetheris.security",
+    "ip_address": "10.231.137.133",
+    "username": "Joy Kramer",
+    "email": "joy.kramer@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-41.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.95.220",
+    "username": "Kristine Moore",
+    "email": "kristine.moore@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-52.dc-germany-3.aetheris.security",
+    "ip_address": "172.27.182.139",
+    "username": "Joseph Best",
+    "email": "joseph.best@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-58.dc-germany-3.aetheris.security",
+    "ip_address": "172.22.5.161",
+    "username": "Elizabeth Cross",
+    "email": "elizabeth.cross@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-78.dc-germany-3.aetheris.security",
+    "ip_address": "172.20.234.228",
+    "username": "Alexis Lee",
+    "email": "alexis.lee@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-38.dc-germany-3.aetheris.security",
+    "ip_address": "172.24.153.162",
+    "username": "Teresa Jackson",
+    "email": "teresa.jackson@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-61.dc-germany-3.aetheris.security",
+    "ip_address": "172.19.133.222",
+    "username": "Victor Medina",
+    "email": "victor.medina@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-87.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.6.52",
+    "username": "Johnny Burnett",
+    "email": "johnny.burnett@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-78.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.24.165",
+    "username": "Rebecca Miller",
+    "email": "rebecca.miller@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-17.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.21.68",
+    "username": "Crystal Kent",
+    "email": "crystal.kent@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-57.dc-germany-3.aetheris.security",
+    "ip_address": "10.10.16.177",
+    "username": "Angela Collins",
+    "email": "angela.collins@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-10.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.97.223",
+    "username": "Cassandra Ferguson",
+    "email": "cassandra.ferguson@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-19.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.204.115",
+    "username": "Michael Moore",
+    "email": "michael.moore@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-34.dc-germany-3.aetheris.security",
+    "ip_address": "172.22.146.61",
+    "username": "Steven Wagner",
+    "email": "steven.wagner@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "QA",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-25.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.129.95",
+    "username": "Paul Cunningham",
+    "email": "paul.cunningham@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-24.dc-germany-3.aetheris.security",
+    "ip_address": "10.169.8.188",
+    "username": "Derrick Landry",
+    "email": "derrick.landry@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-78.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.93.114",
+    "username": "Jeffrey Bell",
+    "email": "jeffrey.bell@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "server-62.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.120.244",
+    "username": "Robert Lowe",
+    "email": "robert.lowe@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "QA",
+    "asset_type": "Server",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "server-72.dc-germany-3.aetheris.security",
+    "ip_address": "10.194.180.173",
+    "username": "Mary Avila",
+    "email": "mary.avila@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "QA",
+    "asset_type": "Server",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-70.dc-germany-3.aetheris.security",
+    "ip_address": "172.21.39.122",
+    "username": "Hannah Bruce",
+    "email": "hannah.bruce@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Sales Team A",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-16.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.42.51",
+    "username": "Crystal Marks",
+    "email": "crystal.marks@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-14.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.66.17",
+    "username": "Roger Owen",
+    "email": "roger.owen@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-11.dc-germany-3.aetheris.security",
+    "ip_address": "172.29.73.241",
+    "username": "Robert Jones",
+    "email": "robert.jones@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-27.dc-germany-3.aetheris.security",
+    "ip_address": "172.31.226.174",
+    "username": "Michelle Brooks",
+    "email": "michelle.brooks@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-78.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.28.203",
+    "username": "Jason Powell",
+    "email": "jason.powell@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-35.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.170.123",
+    "username": "Monica Floyd",
+    "email": "monica.floyd@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-15.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.211.51",
+    "username": "Ariel Graham",
+    "email": "ariel.graham@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-77.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.3.176",
+    "username": "Patricia Burch",
+    "email": "patricia.burch@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-74.dc-germany-3.aetheris.security",
+    "ip_address": "172.24.198.248",
+    "username": "Kristen Deleon",
+    "email": "kristen.deleon@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-36.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.235.218",
+    "username": "Jennifer Hernandez",
+    "email": "jennifer.hernandez@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-98.dc-germany-3.aetheris.security",
+    "ip_address": "10.3.108.148",
+    "username": "Danielle Bennett",
+    "email": "danielle.bennett@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-48.dc-germany-3.aetheris.security",
+    "ip_address": "172.28.157.224",
+    "username": "Penny Harris",
+    "email": "penny.harris@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-36.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.188.61",
+    "username": "Sharon Aguilar",
+    "email": "sharon.aguilar@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-16.dc-germany-3.aetheris.security",
+    "ip_address": "10.85.44.143",
+    "username": "Cynthia White",
+    "email": "cynthia.white@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-38.dc-germany-3.aetheris.security",
+    "ip_address": "172.29.37.227",
+    "username": "Heather Padilla",
+    "email": "heather.padilla@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-38.dc-germany-3.aetheris.security",
+    "ip_address": "10.105.17.172",
+    "username": "Brian Parker",
+    "email": "brian.parker@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-68.dc-germany-3.aetheris.security",
+    "ip_address": "172.21.31.243",
+    "username": "Michael Carrillo",
+    "email": "michael.carrillo@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-51.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.47.133",
+    "username": "Diana Long",
+    "email": "diana.long@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "server-11.dc-germany-3.aetheris.security",
+    "ip_address": "172.30.49.22",
+    "username": "John Robinson",
+    "email": "john.robinson@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Security",
+    "asset_type": "Server",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.889584+00:00",
+    "hostname": "workstation-38.dc-germany-3.aetheris.security",
+    "ip_address": "10.147.35.11",
+    "username": "Kristin Krueger",
+    "email": "kristin.krueger@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-34.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.92.26",
+    "username": "Sean Cole",
+    "email": "sean.cole@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-75.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.228.98",
+    "username": "John Rodriguez",
+    "email": "john.rodriguez@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-17.dc-germany-3.aetheris.security",
+    "ip_address": "172.22.230.52",
+    "username": "Randy Hester",
+    "email": "randy.hester@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-12.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.144.202",
+    "username": "Scott Griffin",
+    "email": "scott.griffin@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-36.dc-germany-3.aetheris.security",
+    "ip_address": "10.28.78.68",
+    "username": "Vincent Adams",
+    "email": "vincent.adams@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-85.dc-germany-3.aetheris.security",
+    "ip_address": "172.26.163.169",
+    "username": "Caleb Wood",
+    "email": "caleb.wood@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-65.dc-germany-3.aetheris.security",
+    "ip_address": "172.19.178.32",
+    "username": "Matthew Duffy",
+    "email": "matthew.duffy@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-14.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.45.227",
+    "username": "Kayla Alvarez",
+    "email": "kayla.alvarez@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-52.dc-germany-3.aetheris.security",
+    "ip_address": "172.26.108.147",
+    "username": "Samuel Williams",
+    "email": "samuel.williams@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-75.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.9.38",
+    "username": "Katie Rice",
+    "email": "katie.rice@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-37.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.145.122",
+    "username": "Peter Cross",
+    "email": "peter.cross@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-12.dc-germany-3.aetheris.security",
+    "ip_address": "10.161.170.154",
+    "username": "Jane Guzman",
+    "email": "jane.guzman@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-25.dc-germany-3.aetheris.security",
+    "ip_address": "172.29.164.154",
+    "username": "Mario Baldwin",
+    "email": "mario.baldwin@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-62.dc-germany-3.aetheris.security",
+    "ip_address": "10.185.197.219",
+    "username": "Kevin Glenn",
+    "email": "kevin.glenn@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-84.dc-germany-3.aetheris.security",
+    "ip_address": "172.26.235.36",
+    "username": "Joshua Riley",
+    "email": "joshua.riley@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-85.dc-germany-3.aetheris.security",
+    "ip_address": "172.29.75.210",
+    "username": "Carl Wright",
+    "email": "carl.wright@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-50.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.148.211",
+    "username": "Anthony James",
+    "email": "anthony.james@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-49.dc-germany-3.aetheris.security",
+    "ip_address": "10.88.186.86",
+    "username": "Wendy Sanchez",
+    "email": "wendy.sanchez@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "server-55.dc-germany-3.aetheris.security",
+    "ip_address": "172.19.211.181",
+    "username": "Melissa Johnson",
+    "email": "melissa.johnson@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "QA",
+    "asset_type": "Server",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-49.dc-germany-3.aetheris.security",
+    "ip_address": "10.111.78.233",
+    "username": "Teresa Robinson",
+    "email": "teresa.robinson@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-99.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.73.194",
+    "username": "Jamie King",
+    "email": "jamie.king@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-95.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.89.2",
+    "username": "Chelsea Brown",
+    "email": "chelsea.brown@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-19.dc-germany-3.aetheris.security",
+    "ip_address": "10.34.24.59",
+    "username": "Gabriela Doyle",
+    "email": "gabriela.doyle@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-28.dc-germany-3.aetheris.security",
+    "ip_address": "10.33.214.9",
+    "username": "Lisa Miller",
+    "email": "lisa.miller@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-74.dc-germany-3.aetheris.security",
+    "ip_address": "172.30.23.133",
+    "username": "Michael Cannon",
+    "email": "michael.cannon@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-28.dc-germany-3.aetheris.security",
+    "ip_address": "10.177.192.112",
+    "username": "Karen Williams",
+    "email": "karen.williams@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-68.dc-germany-3.aetheris.security",
+    "ip_address": "172.28.45.22",
+    "username": "Derrick Landry",
+    "email": "derrick.landry@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-60.dc-germany-3.aetheris.security",
+    "ip_address": "172.26.184.138",
+    "username": "David Williams",
+    "email": "david.williams@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-26.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.52.105",
+    "username": "Lance Sanchez",
+    "email": "lance.sanchez@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-74.dc-germany-3.aetheris.security",
+    "ip_address": "10.91.165.33",
+    "username": "Amanda Hicks",
+    "email": "amanda.hicks@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-32.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.13.5",
+    "username": "Anne Brown",
+    "email": "anne.brown@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Sales Team A",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-61.dc-germany-3.aetheris.security",
+    "ip_address": "172.30.130.102",
+    "username": "Douglas Robertson",
+    "email": "douglas.robertson@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-99.dc-germany-3.aetheris.security",
+    "ip_address": "10.59.250.51",
+    "username": "Kelly Diaz",
+    "email": "kelly.diaz@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-12.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.153.35",
+    "username": "Julie Rogers",
+    "email": "julie.rogers@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-10.dc-germany-3.aetheris.security",
+    "ip_address": "172.18.63.26",
+    "username": "Nicole Smith",
+    "email": "nicole.smith@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-33.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.111.28",
+    "username": "Alexandria Montoya",
+    "email": "alexandria.montoya@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-33.dc-germany-3.aetheris.security",
+    "ip_address": "10.142.106.92",
+    "username": "Alyssa Davis",
+    "email": "alyssa.davis@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Security",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-59.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.242.214",
+    "username": "Spencer Jackson",
+    "email": "spencer.jackson@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-50.dc-germany-3.aetheris.security",
+    "ip_address": "10.191.34.229",
+    "username": "Nathan Ramirez",
+    "email": "nathan.ramirez@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-32.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.13.32",
+    "username": "Joseph Patterson",
+    "email": "joseph.patterson@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-74.dc-germany-3.aetheris.security",
+    "ip_address": "172.20.37.112",
+    "username": "Maurice Walton",
+    "email": "maurice.walton@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-35.dc-germany-3.aetheris.security",
+    "ip_address": "172.22.44.65",
+    "username": "Alexander Willis",
+    "email": "alexander.willis@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-27.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.247.253",
+    "username": "Heather Lopez",
+    "email": "heather.lopez@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-15.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.200.182",
+    "username": "Ronald Woods",
+    "email": "ronald.woods@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-24.dc-germany-3.aetheris.security",
+    "ip_address": "10.227.62.49",
+    "username": "Robert Moore",
+    "email": "robert.moore@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-90.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.11.249",
+    "username": "Candice Ramos",
+    "email": "candice.ramos@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-13.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.39.162",
+    "username": "Jessica Beltran",
+    "email": "jessica.beltran@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-42.dc-germany-3.aetheris.security",
+    "ip_address": "10.29.131.232",
+    "username": "Matthew Dickerson",
+    "email": "matthew.dickerson@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-80.dc-germany-3.aetheris.security",
+    "ip_address": "172.19.147.101",
+    "username": "Julie Lee",
+    "email": "julie.lee@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-15.dc-germany-3.aetheris.security",
+    "ip_address": "172.25.62.64",
+    "username": "Robert Jones",
+    "email": "robert.jones@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-25.dc-germany-3.aetheris.security",
+    "ip_address": "172.18.234.2",
+    "username": "Brian Cabrera",
+    "email": "brian.cabrera@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "server-55.dc-germany-3.aetheris.security",
+    "ip_address": "172.31.8.2",
+    "username": "Craig Russo",
+    "email": "craig.russo@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Security",
+    "asset_type": "Server",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-19.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.121.57",
+    "username": "Tammy Montgomery",
+    "email": "tammy.montgomery@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-52.dc-germany-3.aetheris.security",
+    "ip_address": "172.28.113.73",
+    "username": "Amber Mejia",
+    "email": "amber.mejia@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-88.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.170.9",
+    "username": "Tammy Williams",
+    "email": "tammy.williams@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Sales Team A",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-54.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.114.105",
+    "username": "Kelly Jones",
+    "email": "kelly.jones@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-65.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.54.215",
+    "username": "Ashley Potter",
+    "email": "ashley.potter@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-46.dc-germany-3.aetheris.security",
+    "ip_address": "172.29.20.226",
+    "username": "Randall Newman",
+    "email": "randall.newman@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Sales Operations",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-45.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.58.150",
+    "username": "Brandon Petersen",
+    "email": "brandon.petersen@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Hardware Engineering",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-22.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.40.252",
+    "username": "Breanna Lopez",
+    "email": "breanna.lopez@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-89.dc-germany-3.aetheris.security",
+    "ip_address": "10.99.184.96",
+    "username": "Christy Briggs",
+    "email": "christy.briggs@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "server-20.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.137.104",
+    "username": "Dustin Ware",
+    "email": "dustin.ware@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "QA",
+    "asset_type": "Server",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-88.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.128.87",
+    "username": "Kristy Chavez",
+    "email": "kristy.chavez@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-32.dc-germany-3.aetheris.security",
+    "ip_address": "172.17.139.56",
+    "username": "Sean Garza",
+    "email": "sean.garza@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-40.dc-germany-3.aetheris.security",
+    "ip_address": "172.25.81.61",
+    "username": "Christopher Forbes",
+    "email": "christopher.forbes@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-84.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.195.33",
+    "username": "Ann Torres",
+    "email": "ann.torres@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-60.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.138.143",
+    "username": "Carolyn Gordon",
+    "email": "carolyn.gordon@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-15.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.187.189",
+    "username": "Brandon Walker",
+    "email": "brandon.walker@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-61.dc-germany-3.aetheris.security",
+    "ip_address": "10.215.164.240",
+    "username": "Felicia Frank",
+    "email": "felicia.frank@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-53.dc-germany-3.aetheris.security",
+    "ip_address": "172.29.200.229",
+    "username": "Kelly Ray",
+    "email": "kelly.ray@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-62.dc-germany-3.aetheris.security",
+    "ip_address": "10.26.114.120",
+    "username": "Susan Phelps",
+    "email": "susan.phelps@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-64.dc-germany-3.aetheris.security",
+    "ip_address": "172.25.214.197",
+    "username": "Andrew Lopez",
+    "email": "andrew.lopez@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-79.dc-germany-3.aetheris.security",
+    "ip_address": "172.24.180.226",
+    "username": "Alyssa Davis",
+    "email": "alyssa.davis@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-36.dc-germany-3.aetheris.security",
+    "ip_address": "10.232.63.174",
+    "username": "Peter Perez",
+    "email": "peter.perez@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-94.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.138.49",
+    "username": "Devon May",
+    "email": "devon.may@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-36.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.7.111",
+    "username": "Luis Chaney",
+    "email": "luis.chaney@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-69.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.65.20",
+    "username": "David Brewer",
+    "email": "david.brewer@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-82.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.31.11",
+    "username": "Tracy Peterson",
+    "email": "tracy.peterson@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-79.dc-germany-3.aetheris.security",
+    "ip_address": "10.123.60.204",
+    "username": "Cheryl Harmon",
+    "email": "cheryl.harmon@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-42.dc-germany-3.aetheris.security",
+    "ip_address": "172.17.75.211",
+    "username": "Jennifer Fuentes",
+    "email": "jennifer.fuentes@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-42.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.241.209",
+    "username": "Christine Thompson",
+    "email": "christine.thompson@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-85.dc-germany-3.aetheris.security",
+    "ip_address": "10.214.224.36",
+    "username": "Evan Stein",
+    "email": "evan.stein@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-70.dc-germany-3.aetheris.security",
+    "ip_address": "172.20.91.13",
+    "username": "Tonya Robinson",
+    "email": "tonya.robinson@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-73.dc-germany-3.aetheris.security",
+    "ip_address": "172.18.199.120",
+    "username": "Jessica Mccormick",
+    "email": "jessica.mccormick@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-56.dc-germany-3.aetheris.security",
+    "ip_address": "10.117.10.194",
+    "username": "Kenneth Wilson",
+    "email": "kenneth.wilson@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-42.dc-germany-3.aetheris.security",
+    "ip_address": "10.251.61.222",
+    "username": "Anthony Vasquez",
+    "email": "anthony.vasquez@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-45.dc-germany-3.aetheris.security",
+    "ip_address": "172.25.9.223",
+    "username": "Andrew Thomas",
+    "email": "andrew.thomas@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-57.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.88.122",
+    "username": "Brittany Thompson",
+    "email": "brittany.thompson@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-86.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.36.73",
+    "username": "Jennifer Hunt",
+    "email": "jennifer.hunt@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-97.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.240.223",
+    "username": "Matthew Jones",
+    "email": "matthew.jones@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-51.dc-germany-3.aetheris.security",
+    "ip_address": "172.24.39.99",
+    "username": "Christopher Holland",
+    "email": "christopher.holland@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-43.dc-germany-3.aetheris.security",
+    "ip_address": "10.197.19.83",
+    "username": "Cheryl Love",
+    "email": "cheryl.love@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-50.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.43.165",
+    "username": "Teresa Robbins",
+    "email": "teresa.robbins@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-63.dc-germany-3.aetheris.security",
+    "ip_address": "172.22.138.176",
+    "username": "Michelle Sandoval",
+    "email": "michelle.sandoval@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Security",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-56.dc-germany-3.aetheris.security",
+    "ip_address": "172.20.33.111",
+    "username": "Allison Ray",
+    "email": "allison.ray@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-17.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.228.46",
+    "username": "Amy Johnson",
+    "email": "amy.johnson@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-80.dc-germany-3.aetheris.security",
+    "ip_address": "10.156.158.203",
+    "username": "Jamie Wiley",
+    "email": "jamie.wiley@aetheris.security",
+    "location": "Munich",
+    "country": "Germany",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-62.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.153.250",
+    "username": "Heather Lowery",
+    "email": "heather.lowery@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-32.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.247.235",
+    "username": "Michael Gibson",
+    "email": "michael.gibson@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-29.dc-germany-3.aetheris.security",
+    "ip_address": "172.28.190.41",
+    "username": "Michael Kim",
+    "email": "michael.kim@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-70.dc-germany-3.aetheris.security",
+    "ip_address": "10.175.127.228",
+    "username": "Katelyn Reynolds",
+    "email": "katelyn.reynolds@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-93.dc-germany-3.aetheris.security",
+    "ip_address": "10.225.51.16",
+    "username": "Jessica Bowman",
+    "email": "jessica.bowman@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Accounting",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-38.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.224.118",
+    "username": "Michael Guerra",
+    "email": "michael.guerra@aetheris.security",
+    "location": "Edinburgh",
+    "country": "UK",
+    "department": "Employee Relations",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-51.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.191.116",
+    "username": "Jason Mora",
+    "email": "jason.mora@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-51.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.191.207",
+    "username": "Michael Watkins",
+    "email": "michael.watkins@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-53.dc-germany-3.aetheris.security",
+    "ip_address": "10.97.177.179",
+    "username": "Christopher Schultz",
+    "email": "christopher.schultz@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-58.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.236.242",
+    "username": "Courtney Davis",
+    "email": "courtney.davis@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-18.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.81.144",
+    "username": "John Wood",
+    "email": "john.wood@aetheris.security",
+    "location": "Osaka",
+    "country": "Japan",
+    "department": "Treasury",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-21.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.213.129",
+    "username": "Sara Carter",
+    "email": "sara.carter@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Content Creation",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-99.dc-germany-3.aetheris.security",
+    "ip_address": "10.42.253.143",
+    "username": "Ryan Gilmore",
+    "email": "ryan.gilmore@aetheris.security",
+    "location": "London",
+    "country": "UK",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-16.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.243.245",
+    "username": "Sarah Cook",
+    "email": "sarah.cook@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Networking",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-98.dc-germany-3.aetheris.security",
+    "ip_address": "172.23.67.26",
+    "username": "Ryan Johnson",
+    "email": "ryan.johnson@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-37.dc-germany-3.aetheris.security",
+    "ip_address": "10.231.38.138",
+    "username": "Douglas Robertson",
+    "email": "douglas.robertson@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "server-55.dc-germany-3.aetheris.security",
+    "ip_address": "172.19.211.181",
+    "username": "Andrew Dominguez",
+    "email": "andrew.dominguez@aetheris.security",
+    "location": "Chicago",
+    "country": "USA",
+    "department": "QA",
+    "asset_type": "Server",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "server-30.dc-germany-3.aetheris.security",
+    "ip_address": "172.17.22.199",
+    "username": "Stephen Wilson",
+    "email": "stephen.wilson@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Security",
+    "asset_type": "Server",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-90.dc-germany-3.aetheris.security",
+    "ip_address": "172.28.86.135",
+    "username": "Gary Miller",
+    "email": "gary.miller@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Sales Team A",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-12.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.183.140",
+    "username": "Sarah Hernandez",
+    "email": "sarah.hernandez@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Payroll",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-86.dc-germany-3.aetheris.security",
+    "ip_address": "10.181.185.171",
+    "username": "William Malone",
+    "email": "william.malone@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-37.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.145.122",
+    "username": "Michael Gibson",
+    "email": "michael.gibson@aetheris.security",
+    "location": "Berlin",
+    "country": "Germany",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-48.dc-germany-3.aetheris.security",
+    "ip_address": "10.216.201.93",
+    "username": "Matthew Hardy",
+    "email": "matthew.hardy@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-54.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.187.189",
+    "username": "Lynn Evans",
+    "email": "lynn.evans@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Audit",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-89.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.90.83",
+    "username": "Justin Mills",
+    "email": "justin.mills@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "Supply Chain",
+    "asset_type": "Workstation",
+    "event_type": "unexpected_kernel_module",
+    "details": {
+      "module_name": "rootkit_xyz",
+      "detection_tool": "Chkrootkit",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-30.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.171.33",
+    "username": "Johnny Wang",
+    "email": "johnny.wang@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Sales Team B",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-61.dc-germany-3.aetheris.security",
+    "ip_address": "10.186.136.204",
+    "username": "Kimberly Salazar",
+    "email": "kimberly.salazar@aetheris.security",
+    "location": "Los Angeles",
+    "country": "USA",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "suspicious_process_tree",
+    "details": {
+      "parent_process": "explorer.exe",
+      "child_process": "cmd.exe /c evil.bat",
+      "detection_tool": "Wazuh",
+      "alert_level": "critical"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-44.dc-germany-3.aetheris.security",
+    "ip_address": "172.21.101.217",
+    "username": "Ethan Rodriguez",
+    "email": "ethan.rodriguez@aetheris.security",
+    "location": "Manchester",
+    "country": "UK",
+    "department": "Logistics",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-79.dc-germany-3.aetheris.security",
+    "ip_address": "192.168.201.237",
+    "username": "Joshua Clayton",
+    "email": "joshua.clayton@aetheris.security",
+    "location": "Frankfurt",
+    "country": "Germany",
+    "department": "Digital Marketing",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-29.dc-germany-3.aetheris.security",
+    "ip_address": "10.124.189.72",
+    "username": "Thomas Gutierrez",
+    "email": "thomas.gutierrez@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Recruitment",
+    "asset_type": "Workstation",
+    "event_type": "audit_log_tampering",
+    "details": {
+      "file_path": "/var/log/auth.log",
+      "attempted_action": "deletion",
+      "detection_tool": "Tripwire",
+      "alert_level": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-13.dc-germany-3.aetheris.security",
+    "ip_address": "172.24.128.7",
+    "username": "James Spears",
+    "email": "james.spears@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-15.dc-germany-3.aetheris.security",
+    "ip_address": "172.18.69.216",
+    "username": "Jordan Guzman",
+    "email": "jordan.guzman@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Manufacturing",
+    "asset_type": "Workstation",
+    "event_type": "policy_violation",
+    "details": {
+      "policy": "No shell access for service accounts",
+      "violating_user": "svc-backup",
+      "detection_tool": "Auditd",
+      "alert_level": "low"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-47.dc-germany-3.aetheris.security",
+    "ip_address": "10.52.162.209",
+    "username": "Sara Carter",
+    "email": "sara.carter@aetheris.security",
+    "location": "New York",
+    "country": "USA",
+    "department": "Systems Administration",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-98.dc-germany-3.aetheris.security",
+    "ip_address": "10.91.84.153",
+    "username": "Calvin Bailey",
+    "email": "calvin.bailey@aetheris.security",
+    "location": "Tokyo",
+    "country": "Japan",
+    "department": "PR",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  },
+  {
+    "timestamp": "2025-04-07T13:48:50.890698+00:00",
+    "hostname": "workstation-10.dc-germany-3.aetheris.security",
+    "ip_address": "172.20.127.34",
+    "username": "Shane Hernandez",
+    "email": "shane.hernandez@aetheris.security",
+    "location": "Kyoto",
+    "country": "Japan",
+    "department": "Software Development",
+    "asset_type": "Workstation",
+    "event_type": "file_integrity_violation",
+    "details": {
+      "file_path": "/etc/passwd",
+      "hash_before": "a6df87a1e5765630f640c90f49f83c4e7350314568cdf2a29e51b5cef40e7376",
+      "hash_after": "d56919c43dd02cff72d3adb4c024dd7c9793511bf6c7595f874e280325a065d4",
+      "detection_tool": "OSSEC",
+      "alert_level": "high"
+    }
+  }
+]

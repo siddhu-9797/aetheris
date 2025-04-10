@@ -4,22 +4,26 @@ from django.db.models import Q
 from vtagent.models import RawArticle, GeneratedTaxonomyLabel
 from syntheticcmdb.models import ConfigurationItem
 from llmintegration.llm_utils import call_gemini
-from sentence_transformers import SentenceTransformer, util
 import faiss
 import pickle
 import os
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
 
-EMBEDDING_MODEL = SentenceTransformer("all-MiniLM-L6-v2")
+# Paths
 INDEX_PATH = os.path.join("faiss", "articles", "index.index")
 ID_MAP_PATH = os.path.join("faiss", "articles", "id_map.pkl")
 TEXTS_PATH = os.path.join("faiss", "articles", "texts.pkl")
+VECTORIZER_PATH = os.path.join("faiss", "articles", "vectorizer.pkl")
 
-# Load FAISS index and mappings
+# Load FAISS index and associated mappings
 faiss_index = faiss.read_index(INDEX_PATH)
 with open(ID_MAP_PATH, "rb") as f:
     id_map = pickle.load(f)
 with open(TEXTS_PATH, "rb") as f:
     texts = pickle.load(f)
+with open(VECTORIZER_PATH, "rb") as f:
+    vectorizer: TfidfVectorizer = pickle.load(f)
 
 
 def classify_prompt_type(query: str) -> str:
@@ -34,71 +38,81 @@ def classify_prompt_type(query: str) -> str:
 
 
 def build_gemini_prompt_and_response(user_query):
-    embedding = EMBEDDING_MODEL.encode(user_query, convert_to_tensor=True)
-    top_k = 5
-    scores, indices = faiss_index.search(embedding.unsqueeze(0).cpu().numpy(), top_k)
+    query_vec = vectorizer.transform([user_query]).astype(np.float32).toarray()
+    scores, indices = faiss_index.search(query_vec, 5)
     matched_ids = [id_map[i] for i in indices[0] if i < len(id_map)]
     articles = RawArticle.objects.filter(id__in=matched_ids)
 
-    article_text = "\n\n".join([f"Title: {a.title}\nContent: {a.content[:1000]}..." for a in articles])
+    article_text = "\n\n".join([f"### {a.title}\n{a.content[:800]}..." for a in articles])
     record_ids = [f"Article:{a.id}" for a in articles]
 
     labels = GeneratedTaxonomyLabel.objects.filter(record_id__in=record_ids)
     label_summary = "\n".join([
-        f"ID: {l.record_id} | Impact: {l.impact} | Actor: {l.actor} | Platform: {l.platform}" for l in labels
+        f"- **{l.record_id}** | Impact: {l.impact} | Actor: {l.actor} | Platform: {l.platform}" for l in labels
     ])
 
     assets = ConfigurationItem.objects.filter(
         Q(asset_type__icontains="laptop") | Q(asset_type__icontains="server")
     )[:10]
-    asset_list = "\n".join([
-        f"{a.asset_type} - {a.os} - {a.owner_email} - {a.city}, {a.country}" for a in assets
+    asset_table = "\n".join([
+        f"| {a.asset_type} | {a.os} | {a.employee_email} | {a.city}, {a.country} |" for a in assets
     ])
+    asset_header = "| Type | OS | Email | Location |\n|------|----|--------|----------|"
 
     prompt_type = classify_prompt_type(user_query)
 
     if prompt_type == "summary":
         prompt = f"""
-Summarize the following threat reports:
+### Threat Summary Report
 
 {article_text}
 
-Include impacted systems and actors if available.
+Include impacted systems and actors. Format output using:
+- Headings (##)
+- Bullet lists
+- Markdown tables for structured info
 """
     elif prompt_type == "impact":
         prompt = f"""
-Identify affected assets and users based on this context:
+### Affected Systems & Users
 
+Taxonomy Labels:
 {label_summary}
 
-Known affected assets:
-{asset_list}
+#### Assets Table (format in Markdown):
+{asset_header}
+{asset_table}
 """
     elif prompt_type == "action":
         prompt = f"""
-Given this threat context:
+### Recommended Remediation Steps
 
+Threat Context:
 {article_text}
 
-And related assets:
-{asset_list}
+Assets involved:
+{asset_header}
+{asset_table}
 
-Suggest appropriate remediation and containment steps.
+Provide actionable next steps.
 """
     else:
         prompt = f"""
-You are a cybersecurity assistant. Here is current context:
+### General Cybersecurity Query
 
+Articles:
 {article_text}
 
-Taxonomy:
+Labels:
 {label_summary}
 
 Assets:
-{asset_list}
+{asset_header}
+{asset_table}
 
 User Query: {user_query}
-Please provide the best response based on available intelligence.
+
+Respond appropriately in structured format.
 """
 
     return call_gemini(prompt)

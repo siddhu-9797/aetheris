@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">🔍 FAISS Similarity Dashboard</h2>
+
+  <form method="get" class="input-group mb-4">
+    <input type="text" name="q" class="form-control" placeholder="Search similar articles..." value="{{ query }}" required>
+    <button class="btn btn-outline-primary" type="submit">Search</button>
+  </form>
+
+  {% if results %}
+    <div class="list-group">
+      {% for r in results %}
+        <div class="list-group-item mb-3">
+          <h5 class="mb-1">📰 {{ r.title }}</h5>
+          <p class="mb-1 text-muted">{{ r.excerpt }}</p>
+          <small class="text-secondary">Similarity Score: <strong>{{ r.score }}</strong></small>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No similar articles found.</p>
+  {% endif %}
+</div>
+{% endblock %}

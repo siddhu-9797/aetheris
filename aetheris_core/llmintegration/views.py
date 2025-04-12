@@ -6,6 +6,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from llmintegration.contextual_query_pipeline import build_gemini_prompt_and_response
 from llmintegration.llm_utils import call_gemini
+import markdown2
 
 # UI-based Chat View
 @csrf_exempt
@@ -18,7 +19,7 @@ def llm_chat_view(request):
         gemini_response = build_gemini_prompt_and_response(user_input)
 
         request.session["history"].append({"role": "chat-user", "text": user_input})
-        request.session["history"].append({"role": "chat-bot", "text": gemini_response})
+        request.session["history"].append({"role": "chat-bot", "text": markdown2.markdown(gemini_response)})
         request.session.modified = True
 
     return render(request, "llmintegration/llm_chat.html", {

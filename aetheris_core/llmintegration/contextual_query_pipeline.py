@@ -9,6 +9,7 @@ import pickle
 import os
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
+from collections import Counter, defaultdict
 
 # Paths
 INDEX_PATH = os.path.join("faiss", "articles", "index.index")
@@ -37,7 +38,46 @@ def classify_prompt_type(query: str) -> str:
     return "general"
 
 
+def extract_filter_entities(query):
+    query = query.lower()
+    cities = ["berlin", "london", "frankfurt", "osaka", "edinburgh", "manchester"]
+    departments = ["finance", "hr", "engineering", "it", "devops", "security"]
+    found = {"city": None, "department": None}
+    for city in cities:
+        if city in query:
+            found["city"] = city.title()
+    for dept in departments:
+        if dept in query:
+            found["department"] = dept.title()
+    return found
+
+
+def summarize_labels(labels):
+    groups = defaultdict(Counter)
+    for l in labels:
+        if isinstance(l.platform, list):
+            groups["platform"].update(l.platform)
+        if isinstance(l.os, str):
+            groups["os"].update([l.os])
+        if isinstance(l.department, str):
+            groups["department"].update([l.department])
+        if isinstance(l.country, str):
+            groups["country"].update([l.country])
+        if isinstance(l.city, str):
+            groups["city"].update([l.city])
+        if isinstance(l.severity, list):
+            groups["severity"].update(l.severity)
+        if isinstance(l.impact, list):
+            groups["impact"].update(l.impact)
+        if isinstance(l.actor, list):
+            groups["actor"].update(l.actor)
+        if isinstance(l.mitre_tactics, list):
+            groups["mitre_tactics"].update(l.mitre_tactics)
+    return groups
+
+
 def build_gemini_prompt_and_response(user_query):
+    filters = extract_filter_entities(user_query)
     query_vec = vectorizer.transform([user_query]).astype(np.float32).toarray()
     scores, indices = faiss_index.search(query_vec, 5)
     matched_ids = [id_map[i] for i in indices[0] if i < len(id_map)]
@@ -46,73 +86,57 @@ def build_gemini_prompt_and_response(user_query):
     article_text = "\n\n".join([f"### {a.title}\n{a.content[:800]}..." for a in articles])
     record_ids = [f"Article:{a.id}" for a in articles]
 
-    labels = GeneratedTaxonomyLabel.objects.filter(record_id__in=record_ids)
-    label_summary = "\n".join([
-        f"- **{l.record_id}** | Impact: {l.impact} | Actor: {l.actor} | Platform: {l.platform}" for l in labels
-    ])
+    labels = list(GeneratedTaxonomyLabel.objects.all())
+    if filters["city"]:
+        labels = [l for l in labels if l.city.lower() == filters["city"].lower()]
+    if filters["department"]:
+        labels = [l for l in labels if l.department.lower() == filters["department"].lower()]
+    grouped = summarize_labels(labels)
 
-    assets = ConfigurationItem.objects.filter(
-        Q(asset_type__icontains="laptop") | Q(asset_type__icontains="server")
-    )[:10]
+    label_summary = ""
+    for key, counter in grouped.items():
+        label_summary += f"\n**{key.title()}**:\n"
+        for val, count in counter.most_common(10):
+            label_summary += f"- {val}: {count}\n"
+
+    assets = ConfigurationItem.objects.all()
+    if filters["city"]:
+        assets = assets.filter(city__iexact=filters["city"])
+    if filters["department"]:
+        assets = assets.filter(department__iexact=filters["department"])
+    assets = assets[:50]
+
+    asset_header = "| Type | OS | Email | Location |\n|------|----|--------|----------|"
     asset_table = "\n".join([
         f"| {a.asset_type} | {a.os} | {a.employee_email} | {a.city}, {a.country} |" for a in assets
     ])
-    asset_header = "| Type | OS | Email | Location |\n|------|----|--------|----------|"
 
     prompt_type = classify_prompt_type(user_query)
 
-    if prompt_type == "summary":
-        prompt = f"""
-### Threat Summary Report
+    prompt = f"""
+You are a cybersecurity threat analyst. You have access to both external threat intel and internal organizational data.
 
+### User Query:
+{user_query}
+
+### Articles (Summarized):
 {article_text}
 
-Include impacted systems and actors. Format output using:
-- Headings (##)
-- Bullet lists
-- Markdown tables for structured info
-"""
-    elif prompt_type == "impact":
-        prompt = f"""
-### Affected Systems & Users
-
-Taxonomy Labels:
+### Taxonomy Labels (Summarized by Category):
 {label_summary}
 
-#### Assets Table (format in Markdown):
-{asset_header}
-{asset_table}
-"""
-    elif prompt_type == "action":
-        prompt = f"""
-### Recommended Remediation Steps
-
-Threat Context:
-{article_text}
-
-Assets involved:
+### Internal Assets:
 {asset_header}
 {asset_table}
 
-Provide actionable next steps.
-"""
-    else:
-        prompt = f"""
-### General Cybersecurity Query
+Please provide a response that includes:
+- **## Summary** of threat impact
+- **## Affected Assets** (use Markdown table if appropriate)
+- **## Threat Types or Actors** (bulleted list)
+- **## Recommended Actions** (if applicable)
 
-Articles:
-{article_text}
-
-Labels:
-{label_summary}
-
-Assets:
-{asset_header}
-{asset_table}
-
-User Query: {user_query}
-
-Respond appropriately in structured format.
+Only include high-severity threats if possible.
+Respond in Markdown.
 """
 
     return call_gemini(prompt)

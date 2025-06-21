@@ -14,7 +14,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyC6isDKp2_RyGqnu94voBHb4QT30G7SasU")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyAmFVx5uafUzFMpfGIcNxkQjaKyxULN2BA")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-4pgpo+m4me1jkafz&3_3$sggq+tk*)5q-#mxiev&o&wea5+uk8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -60,8 +60,8 @@ ROOT_URLCONF = "aetheris_core.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "aetheris_core" / "vtagent" / "templates",
-                 BASE_DIR / "aetheris_core" / "llmintegration" / "templates",
+        "DIRS": [BASE_DIR / "aetheris_core" / "llmintegration" / "templates",
+                 BASE_DIR / "aetheris_core" / "vtagent" / "templates",
         ],
         
         "APP_DIRS": True,
@@ -82,13 +82,17 @@ WSGI_APPLICATION = "aetheris_core.wsgi.application"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'aetheris_db',
+    #     'USER': 'aetheris_user',
+    #     'PASSWORD': 'aetheris_password',
+    #     'HOST': 'localhost',
+    #     'PORT': '3306',
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'aetheris_db',
-        'USER': 'aetheris_user',
-        'PASSWORD': 'aetheris_password',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # BASE_DIR is typically defined at the top of settings.py
     }
 }
 

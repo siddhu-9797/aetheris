@@ -16,8 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("""
+    <h1>Aetheris Core - Cybersecurity Intelligence Platform</h1>
+    <p>Available endpoints:</p>
+    <ul>
+        <li><a href="/admin/">Admin Interface</a></li>
+        <li><a href="/llm/">LLM Integration Dashboard</a></li>
+    </ul>
+    """)
 
 urlpatterns = [
+    path("", home, name="home"),
     path("admin/", admin.site.urls),
     path("llm/", include("llmintegration.urls")),
 ]

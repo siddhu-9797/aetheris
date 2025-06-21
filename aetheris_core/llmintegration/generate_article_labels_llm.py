@@ -19,7 +19,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 SAVE_TO_DB = True
 SAVE_TO_JSON = True
-MAX_ARTICLES = 100
+MAX_ARTICLES = int(os.getenv('MAX_ARTICLES', '5'))  # Allow override from environment
 
 # === Dynamically generate EXHAUSTIVE_FIELDS from model ===
 EXHAUSTIVE_FIELDS = [

@@ -118,7 +118,7 @@ packaging==24.2
 pandas==2.2.3
 parsel==1.10.0
 patsy==1.0.1
-pillow==11.2.0
+pillow
 prompt_toolkit==3.0.50
 propcache==0.3.1
 Protego==0.4.0

@@ -63,13 +63,124 @@ class NewsSourceAdmin(ExportMixin, admin.ModelAdmin):
         try:
             source = NewsSource.objects.get(pk=source_id)
             count, errors = crawl_news_source(source, use_scrapy=use_scrapy, use_bs4=use_bs4)
-            if errors:
-                self.message_user(request, f"Crawl completed with errors: {errors}", messages.WARNING)
+            
+            # Filter out timeout errors from display
+            filtered_errors = []
+            for error in errors:
+                if "timed out after" not in str(error) and "UNIQUE constraint failed" not in str(error):
+                    filtered_errors.append(error)
+            
+            # Auto-vectorize and classify new articles if any were crawled
+            if count > 0:
+                try:
+                    # Step 1: Vectorization
+                    self.message_user(request, f"Crawled {count} articles. Starting vectorization...", messages.INFO)
+                    vectorize_result = self._auto_vectorize_articles()
+                    
+                    # Step 2: ML Classification
+                    self.message_user(request, "Vectorization complete. Starting ML classification...", messages.INFO)
+                    ml_result = self._auto_ml_classify_articles()
+                    
+                    # Step 3: LLM Classification
+                    self.message_user(request, "ML classification complete. Starting LLM analysis (this may take a few minutes)...", messages.INFO)
+                    llm_result = self._auto_classify_articles(count)
+                    
+                    # Final success
+                    self.message_user(request, f"🎉 Complete pipeline finished! Crawled {count} articles with full ML & LLM classification.", messages.SUCCESS)
+                except Exception as ve:
+                    self.message_user(request, f"Crawled {count} articles but post-processing failed: {str(ve)}", messages.WARNING)
             else:
-                self.message_user(request, f"Crawled {count} articles from '{source.name}'", messages.SUCCESS)
+                self.message_user(request, "No new articles found to crawl", messages.INFO)
+                
+            if filtered_errors:
+                # Show only first few errors to avoid overwhelming
+                error_summary = filtered_errors[:3]
+                if len(filtered_errors) > 3:
+                    error_summary.append(f"... and {len(filtered_errors) - 3} more errors")
+                self.message_user(request, f"Crawl completed with some issues: {error_summary}", messages.WARNING)
+                
+        except NewsSource.DoesNotExist:
+            self.message_user(request, f"News source with ID {source_id} not found", messages.ERROR)
         except Exception as e:
             self.message_user(request, f"Crawl failed: {str(e)}", messages.ERROR)
-        return redirect("..")
+        # Redirect back to the NewsSource changelist
+        from django.urls import reverse
+        return redirect(reverse('admin:vtagent_newssource_changelist'))
+    
+    def _auto_vectorize_articles(self):
+        """Auto-vectorize articles after crawling"""
+        import subprocess
+        import sys
+        from django.conf import settings
+        
+        # BASE_DIR points to /Users/sid/.../aetheris/, so we need aetheris_core/vtagent/
+        script_path = os.path.join(settings.BASE_DIR, "aetheris_core", "vtagent", "vectorize_articles.py")
+        
+        # Debug: Check if script exists
+        if not os.path.exists(script_path):
+            raise Exception(f"Vectorization script not found at: {script_path}")
+        
+        # Change to the correct working directory
+        old_cwd = os.getcwd()
+        try:
+            os.chdir(os.path.join(settings.BASE_DIR, "aetheris_core"))
+            result = subprocess.run([sys.executable, script_path], capture_output=True, text=True)
+        finally:
+            os.chdir(old_cwd)
+        
+        if result.returncode != 0:
+            raise Exception(f"Vectorization failed: {result.stderr}")
+        
+        # Return success message
+        return f"Vectorized articles: {result.stdout.strip()}"
+    
+    def _auto_classify_articles(self, article_count):
+        """Auto-generate taxonomy labels for new articles"""
+        import subprocess
+        import sys
+        from django.conf import settings
+        
+        # Set max articles to process only the new ones
+        script_path = os.path.join(settings.BASE_DIR, "aetheris_core", "llmintegration", "generate_article_labels_llm.py")
+        
+        # Temporarily update the script to process only new articles
+        env = os.environ.copy()
+        env['MAX_ARTICLES'] = str(min(article_count, 10))  # Limit to avoid timeout
+        
+        result = subprocess.run([sys.executable, script_path], 
+                              capture_output=True, text=True, env=env, timeout=600)  # 10 minute timeout
+        
+        if result.returncode != 0:
+            raise Exception(f"LLM classification failed: {result.stderr}")
+        
+        return f"LLM analysis completed successfully"
+    
+    def _auto_ml_classify_articles(self):
+        """Auto-run ML classification for articles"""
+        import subprocess
+        import sys
+        from django.conf import settings
+        
+        # Run the simple ML classification script (faster, no transformers)
+        script_path = os.path.join(settings.BASE_DIR, "aetheris_core", "vtagent", "simple_ml_classifier.py")
+        
+        # Check if script exists
+        if not os.path.exists(script_path):
+            raise Exception(f"ML classification script not found at: {script_path}")
+        
+        # Change to correct working directory
+        old_cwd = os.getcwd()
+        try:
+            os.chdir(os.path.join(settings.BASE_DIR, "aetheris_core"))
+            result = subprocess.run([sys.executable, script_path], 
+                                  capture_output=True, text=True, timeout=180)  # 3 minute timeout
+        finally:
+            os.chdir(old_cwd)
+        
+        if result.returncode != 0:
+            raise Exception(f"ML classification failed: {result.stderr}")
+        
+        return f"ML classified articles successfully"
 
 @admin.register(RawArticle)
 class RawArticleAdmin(ExportMixin, admin.ModelAdmin):

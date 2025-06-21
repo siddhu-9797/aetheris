@@ -34,7 +34,7 @@ def run_scrapy(source):
             cwd=os.path.join(BASE_DIR, "scrapy_news"),
             capture_output=True,
             text=True,
-            timeout=300
+            timeout=120  # Reduced timeout to 2 minutes
         )
         logger.info(result.stdout)
         logger.error(result.stderr)
@@ -58,8 +58,27 @@ def run_bs4(source):
                 break
             if not url or url in seen_urls:
                 continue
-            if any(x in url.lower() for x in ["about", "contact", "privacy", "/login", "/signup"]):
+            
+            # Filter out invalid and unwanted URLs
+            invalid_patterns = [
+                "about", "contact", "privacy", "/login", "/signup",
+                "javascript:", "mailto:", "tel:", "sms:",
+                "twitter.com", "x.com", "facebook.com", "linkedin.com", 
+                "instagram.com", "youtube.com", "reddit.com",
+                "#", "void(0)"
+            ]
+            if any(pattern in url.lower() for pattern in invalid_patterns):
                 continue
+                
+            # Skip if URL doesn't look like an article
+            if not any(indicator in url.lower() for indicator in [
+                "article", "news", "blog", "post", "story", "security", 
+                "hack", "cyber", "threat", "vulnerability", "attack"
+            ]):
+                # Allow if it's from the same domain and looks like content
+                if not (source.url.split("//")[1].split("/")[0] in url):
+                    continue
+            
             full_url = url if url.startswith("http") else requests.compat.urljoin(source.url, url)
             seen_urls.add(full_url)
             try:
@@ -73,20 +92,24 @@ def run_bs4(source):
                     fallback_soup = BeautifulSoup(fallback_resp.text, "html.parser")
                     text = fallback_soup.get_text(strip=True, separator="\n")
                 if text and len(text) >= 300:
-                    RawArticle.objects.create(
-                        source=source,
-                        source_type="bs4",
-                        title=article.title or full_url,
+                    # Use get_or_create to handle duplicates gracefully
+                    article_obj, created = RawArticle.objects.get_or_create(
                         url=full_url,
-                        published=str(article.publish_date) if article.publish_date else str(datetime.now()),
-                        content=text,
-                        author=", ".join(article.authors) if article.authors else "",
-                        tags=[],
-                        section="",
-                        errors=[],
-                        scraped_at=datetime.now()
+                        defaults={
+                            'source': source,
+                            'source_type': "bs4",
+                            'title': article.title or full_url,
+                            'published': str(article.publish_date) if article.publish_date else str(datetime.now()),
+                            'content': text,
+                            'author': ", ".join(article.authors) if article.authors else "",
+                            'tags': [],
+                            'section': "",
+                            'errors': [],
+                            'scraped_at': datetime.now()
+                        }
                     )
-                    count += 1
+                    if created:
+                        count += 1
             except Exception as e:
                 logger.warning(f"Failed to extract article using newspaper3k: {e} on URL {full_url}")
                 errors.append(str(e))

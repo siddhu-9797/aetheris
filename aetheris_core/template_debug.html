@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetheris Threat Intelligence Platform</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  
+</head>
+<body>
+  
+<input type="hidden" name="csrfmiddlewaretoken" value="uTeeI9cpAaQD6t2odhysTOGK8dRRW8xpd1O5b0EYnJpKC1Qp5pTq3yg2EAevtpIy">
+<style>
+:root {
+  --primary-blue: #2563eb;
+  --secondary-blue: #1e40af;
+  --light-blue: #3b82f6;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-500: #6b7280;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --white: #ffffff;
+  --green-500: #10b981;
+  --red-500: #ef4444;
+  --orange-500: #f59e0b;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--gray-50);
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  box-shadow: 0 0 0 1px var(--gray-200);
+}
+
+.header {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 1rem 1.5rem;
+  flex-shrink: 0;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  margin: 0.25rem 0 0 0;
+}
+
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background: var(--gray-50);
+}
+
+.message {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.message-user {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.avatar-user {
+  background: var(--primary-blue);
+  color: var(--white);
+}
+
+.avatar-bot {
+  background: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.message-content {
+  max-width: 70%;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.message-user .message-content {
+  background: var(--primary-blue);
+  color: var(--white);
+  border-color: var(--primary-blue);
+}
+
+.message-meta {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.message-user .message-meta {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--gray-500);
+}
+
+.welcome-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 0.5rem;
+}
+
+.input-section {
+  background: var(--white);
+  border-top: 1px solid var(--gray-200);
+  padding: 1rem 1.5rem;
+  flex-shrink: 0;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.chat-input {
+  width: 100%;
+  padding: 0.875rem 3rem 0.875rem 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: var(--white);
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.send-button {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary-blue);
+  border: none;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.send-button:hover {
+  background: var(--secondary-blue);
+}
+
+.send-button:disabled {
+  background: var(--gray-300);
+  cursor: not-allowed;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.quick-action {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--gray-700);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quick-action:hover {
+  background: var(--gray-50);
+  border-color: var(--gray-400);
+}
+
+.context-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-500);
+}
+
+.clear-button {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--gray-700);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clear-button:hover {
+  background: var(--gray-50);
+  border-color: var(--red-500);
+  color: var(--red-500);
+}
+
+.typing-indicator {
+  display: none;
+  margin-bottom: 1.5rem;
+}
+
+.typing-content {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.typing-message {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  color: var(--gray-500);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.loading-dots {
+  display: inline-block;
+}
+
+.loading-dots::after {
+  content: '';
+  animation: loadingDots 1.4s infinite;
+}
+
+@keyframes loadingDots {
+  0%, 20% { content: ''; }
+  40% { content: '.'; }
+  60% { content: '..'; }
+  80%, 100% { content: '...'; }
+}
+
+/* Markdown content styling */
+.message-content h1,
+.message-content h2,
+.message-content h3 {
+  color: inherit;
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.message-content h1 { font-size: 1.125rem; }
+.message-content h2 { font-size: 1rem; }
+.message-content h3 { font-size: 0.9rem; }
+
+.message-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+
+.message-content th,
+.message-content td {
+  border: 1px solid var(--gray-300);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.message-content th {
+  background: var(--gray-100);
+  font-weight: 600;
+}
+
+.message-content code {
+  background: var(--gray-100);
+  padding: 0.125rem 0.25rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+.message-content pre {
+  background: var(--gray-100);
+  padding: 0.75rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+}
+
+.message-content ul,
+.message-content ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.message-content li {
+  margin: 0.25rem 0;
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+    height: 100vh;
+  }
+  
+  .header {
+    padding: 1rem;
+  }
+  
+  .input-section {
+    padding: 1rem;
+  }
+  
+  .message-content {
+    max-width: 85%;
+  }
+  
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .quick-actions {
+    justify-content: center;
+  }
+}
+</style>
+
+<div class="chat-container">
+  <!-- Header -->
+  <div class="header">
+    <h1 class="header-title">Aetheris Threat Intelligence</h1>
+    <p class="header-subtitle">AI-powered cybersecurity analysis platform</p>
+  </div>
+
+  <!-- Messages Container -->
+  <div class="messages-container" id="messagesContainer">
+    <div id="messagesList">
+      
+        <div class="welcome-section">
+          <h3 class="welcome-title">Welcome to Aetheris Threat Intelligence</h3>
+          <p>Ask about recent threats, vulnerability analysis, or asset impact assessments.</p>
+          <p><strong>Example:</strong> "What threats were reported in the last 24 hours?"</p>
+        </div>
+      
+
+      
+    </div>
+
+    <div class="typing-indicator" id="typingIndicator">
+      <div class="typing-content">
+        <div class="avatar avatar-bot">AI</div>
+        <div class="typing-message">
+          <span class="loading-dots">Analyzing threat intelligence</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input Section -->
+  <div class="input-section">
+    <div class="input-wrapper">
+      <input 
+        type="text" 
+        class="chat-input" 
+        placeholder="Ask about threats, vulnerabilities, or affected assets..."
+        id="messageInput"
+        autocomplete="off"
+      >
+      <button class="send-button" id="sendButton" type="button">→</button>
+    </div>
+
+    <div class="controls">
+      <div class="quick-actions">
+        <button class="quick-action" onclick="setQuickMessage('Recent threats in last 24 hours')">
+          Recent Threats
+        </button>
+        <button class="quick-action" onclick="setQuickMessage('Microsoft vulnerabilities')">
+          Microsoft CVEs
+        </button>
+        <button class="quick-action" onclick="setQuickMessage('Asset vulnerability assessment')">
+          Asset Analysis
+        </button>
+        <button class="quick-action" onclick="setQuickMessage('Critical severity threats')">
+          Critical Alerts
+        </button>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div class="context-status" id="contextStatus">
+          
+        </div>
+        <button class="clear-button" onclick="clearHistory()">Clear History</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let isLoading = false;
+
+function scrollToBottom() {
+  const container = document.getElementById('messagesContainer');
+  container.scrollTop = container.scrollHeight;
+}
+
+function setQuickMessage(message) {
+  document.getElementById('messageInput').value = message;
+  document.getElementById('messageInput').focus();
+}
+
+function showTyping() {
+  document.getElementById('typingIndicator').style.display = 'block';
+  scrollToBottom();
+}
+
+function hideTyping() {
+  document.getElementById('typingIndicator').style.display = 'none';
+}
+
+function addMessage(content, isUser = false) {
+  const messagesList = document.getElementById('messagesList');
+  const now = new Date();
+  const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+  
+  const messageDiv = document.createElement('div');
+  messageDiv.className = `message ${isUser ? 'message-user' : ''}`;
+  
+  messageDiv.innerHTML = `
+    <div class="avatar ${isUser ? 'avatar-user' : 'avatar-bot'}">
+      ${isUser ? 'U' : 'AI'}
+    </div>
+    <div class="message-content">
+      <div class="message-meta">
+        ${isUser ? 'You' : 'Aetheris AI'} • ${time}
+      </div>
+      ${content}
+    </div>
+  `;
+  
+  messagesList.appendChild(messageDiv);
+  scrollToBottom();
+}
+
+function updateContextStatus(messageCount) {
+  const contextStatus = document.getElementById('contextStatus');
+  if (messageCount > 0) {
+    contextStatus.innerHTML = `
+      <div class="status-dot"></div>
+      <span>Context Active (${messageCount} messages)</span>
+    `;
+    contextStatus.style.display = 'flex';
+  } else {
+    contextStatus.style.display = 'none';
+  }
+}
+
+async function sendMessage() {
+  const input = document.getElementById('messageInput');
+  const message = input.value.trim();
+  
+  if (!message || isLoading) return;
+  
+  isLoading = true;
+  const sendButton = document.getElementById('sendButton');
+  sendButton.disabled = true;
+  
+  // Add user message to chat
+  addMessage(message, true);
+  input.value = '';
+  
+  // Show typing indicator
+  showTyping();
+  
+  try {
+    // Get CSRF token
+    const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]')?.value || 
+                     document.querySelector('meta[name="csrf-token"]')?.content ||
+                     getCookie('csrftoken');
+    
+    const response = await fetch('/llm/chat/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'X-CSRFToken': csrfToken,
+        'X-Requested-With': 'XMLHttpRequest'
+      },
+      body: new URLSearchParams({
+        'user_input': message,
+        'ajax': '1'
+      })
+    });
+    
+    const data = await response.json();
+    
+    hideTyping();
+    
+    if (data.success) {
+      // Add bot response
+      addMessage(data.response_html);
+      
+      // Update context status
+      updateContextStatus(data.message_count);
+    } else {
+      addMessage('Sorry, there was an error processing your request. Please try again.');
+    }
+    
+  } catch (error) {
+    hideTyping();
+    addMessage('Sorry, there was a connection error. Please try again.');
+    console.error('Error:', error);
+  }
+  
+  isLoading = false;
+  sendButton.disabled = false;
+  input.focus();
+}
+
+async function clearHistory() {
+  if (!confirm('Are you sure you want to clear the conversation history?')) {
+    return;
+  }
+  
+  try {
+    const csrfToken = getCookie('csrftoken');
+    
+    const response = await fetch('/llm/chat/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'X-CSRFToken': csrfToken,
+        'X-Requested-With': 'XMLHttpRequest'
+      },
+      body: new URLSearchParams({
+        'clear_context': '1',
+        'ajax': '1'
+      })
+    });
+    
+    const data = await response.json();
+    
+    if (data.success) {
+      // Clear messages
+      const messagesList = document.getElementById('messagesList');
+      messagesList.innerHTML = `
+        <div class="welcome-section">
+          <h3 class="welcome-title">Welcome to Aetheris Threat Intelligence</h3>
+          <p>Ask about recent threats, vulnerability analysis, or asset impact assessments.</p>
+          <p><strong>Example:</strong> "What threats were reported in the last 24 hours?"</p>
+        </div>
+      `;
+      
+      // Update context status
+      updateContextStatus(0);
+    }
+    
+  } catch (error) {
+    console.error('Error clearing history:', error);
+  }
+}
+
+function getCookie(name) {
+  let cookieValue = null;
+  if (document.cookie && document.cookie !== '') {
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.substring(0, name.length + 1) === (name + '=')) {
+        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+        break;
+      }
+    }
+  }
+  return cookieValue;
+}
+
+// Event listeners
+document.getElementById('sendButton').addEventListener('click', sendMessage);
+
+document.getElementById('messageInput').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendMessage();
+  }
+});
+
+// Auto-focus and scroll
+document.getElementById('messageInput').focus();
+scrollToBottom();
+</script>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

@@ -42,18 +42,30 @@ class GenericNewsSpider(scrapy.Spider):
         if not text or len(text) < 100:
             return
 
-        # Save to DB via thread-safe method
+        # Save to DB via thread-safe method with duplicate handling
         try:
-            await asyncio.to_thread(
-                RawArticle.objects.create,
+            from vtagent.models import NewsSource
+            source_obj = NewsSource.objects.get(id=self.source_id)
+            
+            article_obj, created = await asyncio.to_thread(
+                RawArticle.objects.get_or_create,
                 url=response.url,
-                title=article.title,
-                source=self.allowed_domains[0],
-                source_type="scrapy",
-                published=datetime.now(),  # Could attempt to parse from article
-                content=text,
+                defaults={
+                    'title': article.title or response.url,
+                    'source': source_obj,
+                    'source_type': "scrapy",
+                    'published': str(article.publish_date) if article.publish_date else str(datetime.now()),
+                    'content': text,
+                    'author': ", ".join(article.authors) if article.authors else "",
+                    'tags': [],
+                    'section': "",
+                    'errors': [],
+                    'scraped_at': datetime.now()
+                }
             )
-            self.articles_scraped += 1
+            if created:
+                self.articles_scraped += 1
+                logger.info(f"Saved new article: {article.title}")
         except Exception as e:
             logger.error(f"Error saving article from {response.url}: {e}")
 
@@ -61,8 +73,28 @@ class GenericNewsSpider(scrapy.Spider):
         if self.articles_scraped >= self.max_articles:
             return
 
-        # Follow internal links (no crawling policies applied here — safe to enhance later)
+        # Follow internal links with filtering
         for href in response.css("a::attr(href)").getall():
+            if not href:
+                continue
+                
+            # Filter out unwanted URLs
+            invalid_patterns = [
+                "javascript:", "mailto:", "tel:", "#", "void(0)",
+                "twitter.com", "x.com", "facebook.com", "linkedin.com",
+                "about", "contact", "privacy", "/login", "/signup"
+            ]
+            if any(pattern in href.lower() for pattern in invalid_patterns):
+                continue
+            
             absolute_url = response.urljoin(href)
-            if urlparse(absolute_url).netloc == self.allowed_domains[0]:
-                yield scrapy.Request(absolute_url, callback=self.parse)
+            parsed_url = urlparse(absolute_url)
+            
+            # Only follow same-domain links
+            if parsed_url.netloc == self.allowed_domains[0]:
+                # Prefer URLs that look like articles
+                if any(indicator in absolute_url.lower() for indicator in [
+                    "article", "news", "blog", "post", "story", "security", 
+                    "hack", "cyber", "threat", "vulnerability", "attack", "breach"
+                ]):
+                    yield scrapy.Request(absolute_url, callback=self.parse, dont_filter=False)

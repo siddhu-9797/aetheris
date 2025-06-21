@@ -1,0 +1,149 @@
+[
+    {
+        "id": "21",
+        "name": "ContentCreation-Users",
+        "description": "Users in Content Creation department",
+        "members": "77,115,554,642,771,897,1093,1285,1485,1558,1573,1623,1694,1703,1832,1850,1886",
+        "scope": "global"
+    },
+    {
+        "id": "20",
+        "name": "Treasury-Users",
+        "description": "Users in Treasury department",
+        "members": "33,97,102,127,230,273,369,494,601,611,961,1217,1405,1521,1675,1690,1759,1767,1876,1956",
+        "scope": "global"
+    },
+    {
+        "id": "19",
+        "name": "SalesTeamB-Users",
+        "description": "Users in Sales Team B department",
+        "members": "26,239,252,338,432,605,715,750,756,831,949,1192,1257,1299,1318,1503,1606,1611,1717,1756,1829,1866,1937,1991",
+        "scope": "global"
+    },
+    {
+        "id": "18",
+        "name": "QA-Users",
+        "description": "Users in QA department",
+        "members": "4,43,289,333,357,383,421,424,459,464,465,554,609,748,784,815,860,889,1017,1153,1234,1401,1452,1499,1597,1650,1693,1789,1874,1986",
+        "scope": "universal"
+    },
+    {
+        "id": "17",
+        "name": "PR-Users",
+        "description": "Users in PR department",
+        "members": "45,127,171,401,404,454,460,465,496,638,663,665,684,691,726,727,974,1051,1158,1269,1348,1418,1434,1451,1475,1650,1811,1876",
+        "scope": "global"
+    },
+    {
+        "id": "16",
+        "name": "Manufacturing-Users",
+        "description": "Users in Manufacturing department",
+        "members": "78,208,449,471,535,536,668,727,854,942,1046,1209,1239,1372,1463,1520,1524,1528,1627,1656,1722,1742,1806,1836,1852,1876,1887,1936,1952,1961",
+        "scope": "universal"
+    },
+    {
+        "id": "15",
+        "name": "SalesOperations-Users",
+        "description": "Users in Sales Operations department",
+        "members": "171,196,232,322,471,541,739,743,936,1006,1037,1040,1079,1165,1227,1236,1247,1294,1422,1504,1656,1765,1826,1991",
+        "scope": "global"
+    },
+    {
+        "id": "14",
+        "name": "SupplyChain-Users",
+        "description": "Users in Supply Chain department",
+        "members": "169,205,221,269,358,390,510,631,674,702,824,875,1036,1132,1179,1197,1219,1222,1261,1392,1430,1529,1610,1666,1710,1788",
+        "scope": "global"
+    },
+    {
+        "id": "13",
+        "name": "Recruitment-Users",
+        "description": "Users in Recruitment department",
+        "members": "33,80,214,311,467,476,658,778,783,814,906,909,926,962,990,1011,1018,1019,1058,1252,1256,1321,1337,1339,1407,1616,1703,1801,1878,1948",
+        "scope": "domain-local"
+    },
+    {
+        "id": "12",
+        "name": "HardwareEngineering-Users",
+        "description": "Users in Hardware Engineering department",
+        "members": "43,57,174,182,235,238,272,439,472,487,593,747,752,844,920,1181,1200,1295",
+        "scope": "domain-local"
+    },
+    {
+        "id": "11",
+        "name": "SystemsAdministration-Users",
+        "description": "Users in Systems Administration department",
+        "members": "5,43,165,251,379,426,731,827,862,865,887,977,1093,1154,1174,1333,1414,1427,1535,1807,1808",
+        "scope": "global"
+    },
+    {
+        "id": "10",
+        "name": "Networking-Users",
+        "description": "Users in Networking department",
+        "members": "42,150,229,338,354,385,452,491,547,648,657,727,743,790,801,823,857,1108,1132,1179,1297,1333,1439,1654,1685,1704,1793,1822,1926",
+        "scope": "global"
+    },
+    {
+        "id": "9",
+        "name": "EmployeeRelations-Users",
+        "description": "Users in Employee Relations department",
+        "members": "4,17,111,138,337,361,421,640,787,884,1010,1069,1087,1090,1095,1221,1298,1317,1411,1413,1481,1633,1762,1803,1854,1923",
+        "scope": "domain-local"
+    },
+    {
+        "id": "8",
+        "name": "SalesTeamA-Users",
+        "description": "Users in Sales Team A department",
+        "members": "102,125,157,163,388,533,553,848,850,913,926,1419,1476,1614,1752,1842,1877",
+        "scope": "universal"
+    },
+    {
+        "id": "7",
+        "name": "Security-Users",
+        "description": "Users in Security department",
+        "members": "23,61,140,180,223,358,359,472,476,507,553,607,775,793,856,1080,1257,1549,1706,1761,1884",
+        "scope": "global"
+    },
+    {
+        "id": "6",
+        "name": "Payroll-Users",
+        "description": "Users in Payroll department",
+        "members": "54,169,207,215,304,346,407,430,462,471,593,638,649,696,724,780,1011,1023,1071,1438,1478,1488,1516,1617,1712,1792,1940,1942,1946",
+        "scope": "global"
+    },
+    {
+        "id": "5",
+        "name": "SoftwareDevelopment-Users",
+        "description": "Users in Software Development department",
+        "members": "139,172,185,233,250,504,636,744,760,952,1020,1029,1281,1346,1466,1786,1875",
+        "scope": "universal"
+    },
+    {
+        "id": "4",
+        "name": "Audit-Users",
+        "description": "Users in Audit department",
+        "members": "40,297,498,818,1174,1285,1317,1363,1526,1552,1589,1649,1778,1788,1818,1896",
+        "scope": "global"
+    },
+    {
+        "id": "3",
+        "name": "Accounting-Users",
+        "description": "Users in Accounting department",
+        "members": "101,380,534,609,638,695,700,765,918,1249,1325,1347,1359,1416,1719,1743,1980",
+        "scope": "domain-local"
+    },
+    {
+        "id": "2",
+        "name": "Logistics-Users",
+        "description": "Users in Logistics department",
+        "members": "7,69,139,178,215,244,306,345,354,408,689,738,772,840,928,961,1155,1233,1442,1537,1663,1677,1702,1735,1997",
+        "scope": "domain-local"
+    },
+    {
+        "id": "1",
+        "name": "DigitalMarketing-Users",
+        "description": "Users in Digital Marketing department",
+        "members": "104,183,193,346,356,385,904,910,966,1111,1341,1347,1468,1673,1797,1876,1883",
+        "scope": "domain-local"
+    }
+]

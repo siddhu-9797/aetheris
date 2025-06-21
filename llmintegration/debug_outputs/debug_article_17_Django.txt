@@ -1,0 +1,136 @@
+Prompt:
+You are a cybersecurity threat classification engine. Given the following article, classify it across the fields below and return a JSON response with ONLY the fields listed.
+
+Fields:
+[
+  "platform",
+  "software",
+  "software_version",
+  "hardware_vendor",
+  "connectivity",
+  "network_zone",
+  "os",
+  "os_version",
+  "security_software",
+  "ip_address",
+  "country",
+  "city",
+  "business_unit",
+  "department",
+  "security_posture",
+  "severity",
+  "impact",
+  "actor",
+  "origin",
+  "compliance",
+  "threat_stage",
+  "initial_access_method",
+  "payload_type",
+  "mitre_tactics",
+  "impact_area",
+  "detection_vector",
+  "reported_by",
+  "response_action"
+]
+
+This data is directly from the structured Django model.
+
+### Article Title:
+Paper Werewolf Deploys PowerModul Implant in Targeted Cyberattacks on Russian Sectors
+
+### Article Content:
+The threat actor known as Paper Werewolf has been observed exclusively targeting Russian entities with a new implant called PowerModul.
+
+The activity, which took place between July and December 2024, singled out organizations in the mass media, telecommunications, construction, government entities, and energy sectors, Kaspersky said in a new report published Thursday.
+
+Paper Werewolf, also known as GOFFEE, is assessed to have conducted at least seven campaigns since 2022, according to BI.ZONE, with the attacks mainly aimed at government, energy, financial, media, and other organizations.
+
+Attack chains mounted by the threat actor have also been observed incorporating a disruptive component, wherein the intrusions go beyond distributing malware for espionage purposes to also change passwords belonging to employee accounts.
+
+The attacks themselves are initiated via phishing emails that contain a macro-laced lure document, which, upon opening and enabling macros, paves the way for the deployment of a PowerShell-based remote access trojan known as PowerRAT.
+
+The malware is designed to deliver a next-stage payload, often a custom version of the Mythic framework agent known as PowerTaskel and QwakMyAgent. Another tool in the threat actor's arsenal is a malicious IIS module called Owowa, which is used for retrieving Microsoft Outlook credentials entered by users on the web client.
+
+The latest set of attacks documented by Kaspersky starts with a malicious RAR archive attachment containing an executable that masquerades as a PDF or a Word document using a double extension (i.e., *.pdf.exe or *.doc.exe). When the executable is launched, the decoy file is downloaded from a remote server and shown to the user, while the infection proceeds to the next stage in the background.
+
+"The file itself is a Windows system file (explorer.exe or xpsrchvw.exe), with part of its code patched with a malicious shellcode," it said. "The shellcode is similar to what we saw in earlier attacks, but in addition contains an obfuscated Mythic agent, which immediately begins communicating with the command-and-control (C2) server."
+
+The alternate attack sequence is a lot more elaborate, using a RAR archive embedding a Microsoft Office document with a macro that acts as a dropper to deploy and launch PowerModul, a PowerShell script capable of receiving and executing additional PowerShell scripts from the C2 server.
+
+The backdoor is said to have been used since the start of 2024, with the threat actors initially using it to download and execute PowerTaskel on compromised hosts. Some of the other payloads dropped by PowerModul are listed below -
+
+FlashFileGrabber , which is used to steal files from removable media, such as flash drives, and exfiltrate them to the C2 server
+
+, which is used to steal files from removable media, such as flash drives, and exfiltrate them to the C2 server FlashFileGrabberOffline , a variant of FlashFileGrabber that searches removable media for files with specific extensions, and when found, copies them to the local disk within the "%TEMP%\CacheStore\connect\" folder
+
+, a variant of FlashFileGrabber that searches removable media for files with specific extensions, and when found, copies them to the local disk within the "%TEMP%\CacheStore\connect\" folder USB Worm, which is capable of infecting removable media with a copy of PowerModul
+
+PowerTaskel is functionally similar to PowerModul in that it's also designed to run PowerShell scripts sent by the C2 server. But in addition, it can send information about the targeted environment in the form of a "checkin" message, as well as execute other commands received from the C2 server as tasks. It's also equipped to escalate privileges using the PsExec utility.
+
+In at least one instance, PowerTaskel has been found to receive a script with a FolderFileGrabber component that, besides replicating the features of FlashFileGrabber, includes the ability to gather files from remote systems via a hardcod
+
+Raw Response:
+```json
+{
+  "platform": "FortiGate",
+  "software": "FortiOS, SSL-VPN",
+  "software_version": "7.6.2, 7.4.7, 7.2.11, 7.0.17, 6.4.16, 7.4, 7.2, 7.0, 6.4",
+  "hardware_vendor": "Fortinet",
+  "connectivity": "Network",
+  "network_zone": null,
+  "os": "FortiOS",
+  "os_version": null,
+  "security_software": "Antivirus Engine",
+  "ip_address": null,
+  "country": null,
+  "city": null,
+  "business_unit": null,
+  "department": null,
+  "security_posture": "Compromised",
+  "severity": "High",
+  "impact": "Read-only access to device configuration files, potential for further compromise",
+  "actor": "Unknown",
+  "origin": "Unknown",
+  "compliance": null,
+  "threat_stage": "Persistence",
+  "initial_access_method": "Exploitation of known vulnerabilities (CVE-2022-42475, CVE-2023-27997, CVE-2024-21762)",
+  "payload_type": "Symbolic Link (Symlink)",
+  "mitre_tactics": "TA0003 - Persistence, TA0006 - Credential Access (potentially via configuration files)",
+  "impact_area": "Network Devices",
+  "detection_vector": "Antivirus Engine, Manual review of configurations",
+  "reported_by": "Fortinet, watchTowr, CISA, CERT-FR",
+  "response_action": "Update to patched FortiOS versions, reset exposed credentials, disable SSL-VPN temporarily, review device configurations, treat configurations as potentially compromised, perform recovery steps"
+}
+```
+
+Cleaned:
+{
+  "platform": "FortiGate",
+  "software": "FortiOS, SSL-VPN",
+  "software_version": "7.6.2, 7.4.7, 7.2.11, 7.0.17, 6.4.16, 7.4, 7.2, 7.0, 6.4",
+  "hardware_vendor": "Fortinet",
+  "connectivity": "Network",
+  "network_zone": null,
+  "os": "FortiOS",
+  "os_version": null,
+  "security_software": "Antivirus Engine",
+  "ip_address": null,
+  "country": null,
+  "city": null,
+  "business_unit": null,
+  "department": null,
+  "security_posture": "Compromised",
+  "severity": "High",
+  "impact": "Read-only access to device configuration files, potential for further compromise",
+  "actor": "Unknown",
+  "origin": "Unknown",
+  "compliance": null,
+  "threat_stage": "Persistence",
+  "initial_access_method": "Exploitation of known vulnerabilities (CVE-2022-42475, CVE-2023-27997, CVE-2024-21762)",
+  "payload_type": "Symbolic Link (Symlink)",
+  "mitre_tactics": "TA0003 - Persistence, TA0006 - Credential Access (potentially via configuration files)",
+  "impact_area": "Network Devices",
+  "detection_vector": "Antivirus Engine, Manual review of configurations",
+  "reported_by": "Fortinet, watchTowr, CISA, CERT-FR",
+  "response_action": "Update to patched FortiOS versions, reset exposed credentials, disable SSL-VPN temporarily, review device configurations, treat configurations as potentially compromised, perform recovery steps"
+}

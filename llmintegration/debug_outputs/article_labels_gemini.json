@@ -1,0 +1,523 @@
+[
+  {
+    "article_id": 1,
+    "title": "The Hacker News",
+    "origin": "Django",
+    "labels": {
+      "platform": [
+        "AI Platform"
+      ],
+      "software": [
+        "AI Agents"
+      ],
+      "software_version": [],
+      "os": [],
+      "os_version": [],
+      "security_software": [],
+      "network_zone": [],
+      "ip_address": [],
+      "country": [],
+      "city": [],
+      "business_unit": [],
+      "department": [],
+      "severity": [
+        "High"
+      ],
+      "impact": [
+        "Data Breach",
+        "System Compromise"
+      ],
+      "actor": [
+        "Threat Actors"
+      ],
+      "origin": [],
+      "compliance": [],
+      "threat_stage": [
+        "Initial Access",
+        "Execution",
+        "Persistence"
+      ],
+      "initial_access_method": [
+        "Backdoor"
+      ],
+      "payload_type": [
+        "Malware"
+      ],
+      "mitre_tactics": [
+        "TA0001 - Initial Access",
+        "TA0002 - Execution",
+        "TA0003 - Persistence",
+        "TA0005 - Defense Evasion"
+      ],
+      "impact_area": [
+        "Data Security",
+        "System Security"
+      ],
+      "detection_vector": [
+        "Network Traffic Analysis",
+        "Log Analysis"
+      ],
+      "reported_by": [],
+      "response_action": [
+        "Security Hardening",
+        "Incident Response"
+      ]
+    }
+  },
+  {
+    "article_id": 2,
+    "title": "The Hacker News | #1 Trusted Source for Cybersecurity News",
+    "origin": "Django",
+    "labels": {
+      "platform": [
+        "Cloud"
+      ],
+      "software": [
+        "Containerization"
+      ],
+      "software_version": [],
+      "os": [],
+      "os_version": [],
+      "security_software": [],
+      "network_zone": [],
+      "ip_address": [],
+      "country": [],
+      "city": [],
+      "business_unit": [],
+      "department": [],
+      "severity": [],
+      "impact": [],
+      "actor": [],
+      "origin": [],
+      "compliance": [],
+      "threat_stage": [],
+      "initial_access_method": [],
+      "payload_type": [],
+      "mitre_tactics": [],
+      "impact_area": [],
+      "detection_vector": [],
+      "reported_by": [],
+      "response_action": []
+    }
+  },
+  {
+    "article_id": 3,
+    "title": "The Hacker News | #1 Trusted Source for Cybersecurity News",
+    "origin": "Django",
+    "labels": {
+      "platform": [
+        "Cloud"
+      ],
+      "software": [
+        "Containerization"
+      ],
+      "software_version": [],
+      "os": [],
+      "os_version": [],
+      "security_software": [],
+      "network_zone": [
+        "Cloud Network"
+      ],
+      "ip_address": [],
+      "country": [],
+      "city": [],
+      "business_unit": [],
+      "department": [],
+      "severity": [
+        "Medium"
+      ],
+      "impact": [
+        "Data Security",
+        "Application Security"
+      ],
+      "actor": [],
+      "origin": [],
+      "compliance": [],
+      "threat_stage": [
+        "Delivery"
+      ],
+      "initial_access_method": [],
+      "payload_type": [],
+      "mitre_tactics": [],
+      "impact_area": [],
+      "detection_vector": [],
+      "reported_by": [],
+      "response_action": [
+        "Security Updates"
+      ]
+    }
+  },
+  {
+    "article_id": 4,
+    "title": "Cybersecurity Webinars",
+    "origin": "Django",
+    "labels": {
+      "platform": [
+        "Web"
+      ],
+      "software": [
+        "None"
+      ],
+      "software_version": [
+        "None"
+      ],
+      "os": [
+        "None"
+      ],
+      "os_version": [
+        "None"
+      ],
+      "security_software": [
+        "None"
+      ],
+      "network_zone": [
+        "External"
+      ],
+      "ip_address": [
+        "None"
+      ],
+      "country": [
+        "None"
+      ],
+      "city": [
+        "None"
+      ],
+      "business_unit": [
+        "General"
+      ],
+      "department": [
+        "IT",
+        "Security"
+      ],
+      "severity": [
+        "Informational"
+      ],
+      "impact": [
+        "Awareness"
+      ],
+      "actor": [
+        "Unknown"
+      ],
+      "origin": [
+        "Unknown"
+      ],
+      "compliance": [
+        "General"
+      ],
+      "threat_stage": [
+        "None"
+      ],
+      "initial_access_method": [
+        "None"
+      ],
+      "payload_type": [
+        "Information"
+      ],
+      "mitre_tactics": [
+        "TA0001 - Initial Access",
+        "TA0002 - Execution",
+        "TA0003 - Persistence",
+        "TA0004 - Privilege Escalation",
+        "TA0005 - Defense Evasion",
+        "TA0006 - Credential Access",
+        "TA0007 - Discovery",
+        "TA0008 - Lateral Movement",
+        "TA0009 - Collection",
+        "TA0011 - Command and Control",
+        "TA0010 - Exfiltration",
+        "TA0040 - Impact"
+      ],
+      "impact_area": [
+        "Business Operations",
+        "Compliance"
+      ],
+      "detection_vector": [
+        "User Education"
+      ],
+      "reported_by": [
+        "The Hacker News"
+      ],
+      "response_action": [
+        "Training"
+      ]
+    }
+  },
+  {
+    "article_id": 5,
+    "title": "data breach \u2014 Latest News, Reports & Analysis",
+    "origin": "Django",
+    "labels": {
+      "platform": [
+        "Cloud"
+      ],
+      "software": [
+        "Containerization"
+      ],
+      "software_version": [],
+      "os": [],
+      "os_version": [],
+      "security_software": [],
+      "network_zone": [
+        "Cloud"
+      ],
+      "ip_address": [],
+      "country": [],
+      "city": [],
+      "business_unit": [],
+      "department": [],
+      "severity": [
+        "Medium"
+      ],
+      "impact": [
+        "Data breach"
+      ],
+      "actor": [],
+      "origin": [],
+      "compliance": [],
+      "threat_stage": [],
+      "initial_access_method": [],
+      "payload_type": [],
+      "mitre_tactics": [],
+      "impact_area": [
+        "Data Loss"
+      ],
+      "detection_vector": [],
+      "reported_by": [],
+      "response_action": []
+    }
+  },
+  {
+    "article_id": 1,
+    "title": "The Hacker News",
+    "origin": "FAISS",
+    "labels": {
+      "platform": [
+        "AI"
+      ],
+      "software": [],
+      "software_version": [],
+      "os": [],
+      "os_version": [],
+      "security_software": [],
+      "network_zone": [],
+      "ip_address": [],
+      "country": [],
+      "city": [],
+      "business_unit": [],
+      "department": [],
+      "severity": [
+        "High"
+      ],
+      "impact": [
+        "Cross-system breaches",
+        "Data Breach"
+      ],
+      "actor": [
+        "Malicious actors"
+      ],
+      "origin": [],
+      "compliance": [],
+      "threat_stage": [
+        "Initial Access",
+        "Execution",
+        "Persistence"
+      ],
+      "initial_access_method": [
+        "Backdoor"
+      ],
+      "payload_type": [
+        "Malware"
+      ],
+      "mitre_tactics": [
+        "TA0001 - Initial Access",
+        "TA0002 - Execution",
+        "TA0003 - Persistence",
+        "TA0006 - Credential Access",
+        "TA0007 - Discovery",
+        "TA0008 - Lateral Movement",
+        "TA0009 - Collection",
+        "TA0011 - Command and Control",
+        "TA0040 - Impact"
+      ],
+      "impact_area": [
+        "Confidentiality",
+        "Integrity",
+        "Availability"
+      ],
+      "detection_vector": [
+        "Network Traffic Analysis",
+        "Log Analysis"
+      ],
+      "reported_by": [],
+      "response_action": [
+        "Implement security measures for AI agents",
+        "Monitor AI agent activity",
+        "Incident Response"
+      ]
+    }
+  },
+  {
+    "article_id": 2,
+    "title": "The Hacker News | #1 Trusted Source for Cybersecurity News",
+    "origin": "FAISS",
+    "labels": {
+      "platform": [
+        "Cloud"
+      ],
+      "software": [
+        "Containerization",
+        "Software"
+      ],
+      "software_version": [],
+      "os": [],
+      "os_version": [],
+      "security_software": [],
+      "network_zone": [],
+      "ip_address": [],
+      "country": [],
+      "city": [],
+      "business_unit": [],
+      "department": [],
+      "severity": [],
+      "impact": [
+        "Software delivery innovation"
+      ],
+      "actor": [],
+      "origin": [],
+      "compliance": [],
+      "threat_stage": [],
+      "initial_access_method": [],
+      "payload_type": [],
+      "mitre_tactics": [],
+      "impact_area": [
+        "Technology",
+        "Software Development"
+      ],
+      "detection_vector": [],
+      "reported_by": [],
+      "response_action": []
+    }
+  },
+  {
+    "article_id": 3,
+    "title": "The Hacker News | #1 Trusted Source for Cybersecurity News",
+    "origin": "FAISS",
+    "labels": {
+      "platform": [
+        "Cloud"
+      ],
+      "software": [
+        "Containerization"
+      ],
+      "software_version": [],
+      "os": [],
+      "os_version": [],
+      "security_software": [],
+      "network_zone": [],
+      "ip_address": [],
+      "country": [],
+      "city": [],
+      "business_unit": [],
+      "department": [],
+      "severity": [],
+      "impact": [
+        "Software delivery innovation"
+      ],
+      "actor": [],
+      "origin": [],
+      "compliance": [],
+      "threat_stage": [],
+      "initial_access_method": [],
+      "payload_type": [],
+      "mitre_tactics": [],
+      "impact_area": [],
+      "detection_vector": [],
+      "reported_by": [],
+      "response_action": []
+    }
+  },
+  {
+    "article_id": 4,
+    "title": "Cybersecurity Webinars",
+    "origin": "FAISS",
+    "labels": {
+      "platform": [
+        "Cloud"
+      ],
+      "software": [],
+      "software_version": [],
+      "os": [],
+      "os_version": [],
+      "security_software": [],
+      "network_zone": [],
+      "ip_address": [],
+      "country": [],
+      "city": [],
+      "business_unit": [],
+      "department": [],
+      "severity": [],
+      "impact": [],
+      "actor": [
+        "Hacker"
+      ],
+      "origin": [],
+      "compliance": [],
+      "threat_stage": [],
+      "initial_access_method": [],
+      "payload_type": [],
+      "mitre_tactics": [],
+      "impact_area": [
+        "Business"
+      ],
+      "detection_vector": [],
+      "reported_by": [],
+      "response_action": [
+        "Incident Response"
+      ]
+    }
+  },
+  {
+    "article_id": 5,
+    "title": "data breach \u2014 Latest News, Reports & Analysis",
+    "origin": "FAISS",
+    "labels": {
+      "platform": [
+        "Cloud"
+      ],
+      "software": [
+        "Containerization"
+      ],
+      "software_version": [],
+      "os": [],
+      "os_version": [],
+      "security_software": [],
+      "network_zone": [
+        "Cloud"
+      ],
+      "ip_address": [],
+      "country": [],
+      "city": [],
+      "business_unit": [],
+      "department": [],
+      "severity": [],
+      "impact": [
+        "Data breach"
+      ],
+      "actor": [],
+      "origin": [],
+      "compliance": [],
+      "threat_stage": [],
+      "initial_access_method": [],
+      "payload_type": [],
+      "mitre_tactics": [],
+      "impact_area": [
+        "Data Privacy"
+      ],
+      "detection_vector": [],
+      "reported_by": [],
+      "response_action": [
+        "Evolution to secure-by-design"
+      ]
+    }
+  }
+]

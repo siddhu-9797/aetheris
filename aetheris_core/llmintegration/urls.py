@@ -5,8 +5,8 @@ urlpatterns = [
     # Chat interface
     path("chat/", views.llm_chat_view, name="llm_chat_view"),
 
-    # API endpoint for raw Gemini prompt
-    path("api/gemini/", views.gemini_prompt_api_view, name="gemini_prompt_api"),
+    # API endpoint for raw Aetheris LLM prompt
+    path("api/llm/", views.gemini_prompt_api_view, name="aetheris_llm_api"),
 
     # Dashboard
     path("dashboard/", views_dashboard.llm_dashboard_view, name="llm_dashboard"),

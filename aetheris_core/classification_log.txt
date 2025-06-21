@@ -270,3 +270,39 @@ If this is a private repository, make sure to pass a token having permission to 
 2025-04-05 06:55:44,569 - INFO - Classifying: UAC-0219 Hackers Using PowerShell Stealer WRECKSTEEL to Steal Information from Computers
 2025-04-05 06:56:51,922 - INFO - Classified: UAC-0219 Hackers Using PowerShell Stealer WRECKSTEEL to Steal Information from Computers -> ['cyber attack', 'data breach', 'vulnerability']
 2025-04-05 06:56:52,003 - INFO - All raw articles classified successfully.
+2025-06-21 01:27:37,867 - INFO - Loading Zero-Shot Classification pipeline...
+2025-06-21 01:27:39,523 - INFO - Fetching RawArticles...
+2025-06-21 01:27:39,553 - INFO - Total to classify: 79
+2025-06-21 01:27:39,553 - INFO - Classifying: The Hacker News
+2025-06-21 01:27:45,237 - INFO - Classified: The Hacker News -> ['cyber attack', 'threat', 'vulnerability']
+2025-06-21 01:27:45,238 - INFO - Classifying: The Hacker News | #1 Trusted Source for Cybersecurity News
+2025-06-21 01:27:49,598 - INFO - Classified: The Hacker News | #1 Trusted Source for Cybersecurity News -> []
+2025-06-21 01:27:49,598 - INFO - Classifying: The Hacker News | #1 Trusted Source for Cybersecurity News
+2025-06-21 01:27:52,707 - INFO - Classified: The Hacker News | #1 Trusted Source for Cybersecurity News -> []
+2025-06-21 01:27:52,707 - INFO - Classifying: Cybersecurity Webinars
+2025-06-21 01:27:55,226 - INFO - Classified: Cybersecurity Webinars -> []
+2025-06-21 01:27:55,226 - INFO - Classifying: data breach — Latest News, Reports & Analysis
+2025-06-21 01:27:58,379 - INFO - Classified: data breach — Latest News, Reports & Analysis -> []
+2025-06-21 01:27:58,379 - INFO - Classifying: Cyber Attack — Latest News, Reports & Analysis
+2025-06-21 01:28:02,419 - INFO - Classified: Cyber Attack — Latest News, Reports & Analysis -> ['threat', 'cyber attack', 'vulnerability']
+2025-06-21 01:28:02,420 - INFO - Classifying: Vulnerability — Latest News, Reports & Analysis
+2025-06-21 01:28:05,574 - INFO - Classified: Vulnerability — Latest News, Reports & Analysis -> []
+2025-06-21 01:28:05,574 - INFO - Classifying: The Hacker News | Expert Insights
+2025-06-21 01:28:09,282 - INFO - Classified: The Hacker News | Expert Insights -> ['threat', 'cyber attack']
+2025-06-21 01:28:09,282 - INFO - Classifying: Submit a Tip — Contact Us
+2025-06-21 01:28:17,376 - INFO - Classified: Submit a Tip — Contact Us -> ['vulnerability']
+2025-06-21 01:28:17,377 - INFO - Classifying: Free Information Technology Research Library of White Papers, Magazines, Reports, and eBooks
+2025-06-21 01:28:25,449 - INFO - Classified: Free Information Technology Research Library of White Papers, Magazines, Reports, and eBooks -> []
+2025-06-21 01:28:25,449 - INFO - Classifying: We are Hiring! Cybersecurity Writers, Reporters, and Journalists
+2025-06-21 01:28:32,857 - INFO - Classified: We are Hiring! Cybersecurity Writers, Reporters, and Journalists -> []
+2025-06-21 01:28:32,857 - INFO - Classifying: Advertise with The Hacker News
+2025-06-21 01:28:40,730 - INFO - Classified: Advertise with The Hacker News -> []
+2025-06-21 01:28:40,730 - INFO - Classifying: The Hacker News
+2025-06-21 01:28:49,335 - INFO - Classified: The Hacker News -> ['cyber attack', 'data breach', 'threat']
+2025-06-21 01:28:49,335 - INFO - Classifying: Telegram: Join Group Chat
+2025-06-21 01:28:52,513 - INFO - Classified: Telegram: Join Group Chat -> []
+2025-06-21 01:28:52,513 - INFO - Classifying: Cloud Detection & Response for Dummies
+2025-06-21 01:28:55,845 - INFO - Classified: Cloud Detection & Response for Dummies -> []
+2025-06-21 01:28:55,845 - INFO - Classifying: Fortinet Warns Attackers Retain FortiGate Access Post-Patching via SSL-VPN Symlink Exploit
+2025-06-21 01:29:03,790 - INFO - Classified: Fortinet Warns Attackers Retain FortiGate Access Post-Patching via SSL-VPN Symlink Exploit -> ['cyber attack', 'data breach', 'vulnerability']
+2025-06-21 01:29:03,791 - INFO - Classifying: Paper Werewolf Deploys PowerModul Implant in Targeted Cyberattacks on Russian Sectors
